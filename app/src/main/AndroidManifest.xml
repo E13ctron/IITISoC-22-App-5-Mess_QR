@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.messqr">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
 
     <application
         android:allowBackup="true"
@@ -12,9 +20,12 @@
         <activity
             android:name=".QR_code_generator2"
             android:exported="false" />
-        <activity
-            android:name=".qr_code_generator"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".qr_code_generator"-->
+<!--            android:exported="false" />-->
+        <activity android:name=".QR_Scanner"
+            android:exported="false"/>
+
         <activity
             android:name=".Admin_login"
             android:exported="false" />

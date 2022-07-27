@@ -14,3 +14,11 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Mess QR"
 include ':app'
+
+dependencyResolutionManagement {
+
+    repositories {
+
+        maven { url 'https://jitpack.io' }
+    }
+}
