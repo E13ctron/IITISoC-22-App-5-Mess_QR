@@ -10,11 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MessQR">
         <activity
+            android:name=".QR_code_generator2"
+            android:exported="false" />
+        <activity
+            android:name=".qr_code_generator"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_login"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity8"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity7"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity10"
             android:exported="false" />
