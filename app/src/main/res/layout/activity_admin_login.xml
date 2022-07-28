@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.286"
+        app:layout_constraintVertical_bias="0.204"
         app:srcCompat="@drawable/group_1" />
 
     <EditText
@@ -59,7 +59,7 @@
         android:id="@+id/textView11"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -85,7 +85,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,7 +41,7 @@ class MainActivity3 : AppCompatActivity() {
 
         //init firebase auth
         firebaseAuth= FirebaseAuth.getInstance()
-//        checkUser()
+//        checkUser()  //this option makes you login every time you enter if you have entered for first time
 
         //handle click login
         binding.button3.setOnClickListener {
