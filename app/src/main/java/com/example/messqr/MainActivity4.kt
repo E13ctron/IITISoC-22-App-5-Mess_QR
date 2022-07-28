@@ -3,6 +3,7 @@ package com.example.messqr
 import android.content.Intent
 import android.os.Bundle
 import android.os.SystemClock
+import android.view.WindowManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
@@ -13,6 +14,11 @@ class MainActivity4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
+
+        //restrict the screenshot on this specific page
+        if(android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        }
 
         var stopWatch:Chronometer=findViewById(R.id.stopwatch)
         var scanResult:TextView=findViewById(R.id.scan_result)
@@ -25,7 +31,7 @@ class MainActivity4 : AppCompatActivity() {
         }
         else {tick.setImageResource(R.drawable.ic_green_circle_200)
             scanResult.text="The QR Code was Scanned Successfully before: "
-            scanResult.textSize=resources.getDimension(R.dimen.font_18)
+            scanResult.textSize=resources.getDimension(R.dimen.font_10)
             stopWatch.start()
         }
 
