@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dullCyan"> #E9F8F5</color>
     <color name="Cyan"> #1ADCD8</color>
-    <color name="darkblue"> #3F3D56</color>
+    <color name="darkBlue"> #3F3D56</color>
     <color name="cyan_A200">#18ffff</color>
 
 </resources>

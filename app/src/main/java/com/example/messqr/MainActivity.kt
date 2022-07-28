@@ -4,11 +4,20 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.Window
 import android.view.WindowManager
+
+public var scanid: String=""
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar()?.hide();
         setContentView(R.layout.activity_main)
+
         //this is used to create splash screen as full screen
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,

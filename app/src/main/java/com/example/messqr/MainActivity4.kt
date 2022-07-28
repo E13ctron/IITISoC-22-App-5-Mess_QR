@@ -1,17 +1,34 @@
 package com.example.messqr
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageButton
-
+import android.os.SystemClock
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity4 : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
+
+        var stopWatch:Chronometer=findViewById(R.id.stopwatch)
+        var scanResult:TextView=findViewById(R.id.scan_result)
+        var tick:ImageView=findViewById(R.id.tick_icon)
+        var elapsedMillis: Long = SystemClock.elapsedRealtime() - stopWatch.getBase()
+//720000
+        if(scanid==""){
+            tick.setImageResource(R.drawable.ic_qrcode_default_200)
+            scanResult.text="Please Scan"
+        }
+        else {tick.setImageResource(R.drawable.ic_green_circle_200)
+            scanResult.text="The QR Code was Scanned Successfully before: "
+            scanResult.textSize=resources.getDimension(R.dimen.font_18)
+            stopWatch.start()
+        }
+
 
         //handle click special meal button
         val button4:Button=findViewById(R.id.button4)
@@ -20,6 +37,7 @@ class MainActivity4 : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
 
         //handle click announcement Image button
         val announceImageButtonButton:ImageButton =  findViewById(R.id.announce_Ibutton)
@@ -41,6 +59,14 @@ class MainActivity4 : AppCompatActivity() {
         val historyImageButton:ImageButton =  findViewById(R.id.history_Ibutton)
         historyImageButton.setOnClickListener {
             Intent(this,MainActivity10::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        //handle click special meal button
+        val button6:Button=findViewById(R.id.button6)
+        button6.setOnClickListener {
+            Intent(this,QR_Scanner::class.java).also{
                 startActivity(it)
             }
         }
