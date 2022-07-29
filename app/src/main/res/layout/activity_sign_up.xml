@@ -85,10 +85,11 @@
     <Button
         android:id="@+id/button7"
         android:background="@drawable/shadow"
-        android:layout_width="190dp"
-        android:layout_height="50dp"
+        android:layout_width="184dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
         android:text="Create Account"
-        android:textSize="16sp"
+
         app:backgroundTint="@color/Cyan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

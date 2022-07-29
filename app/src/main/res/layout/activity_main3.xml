@@ -51,13 +51,14 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="174dp"
-        android:layout_height="50dp"
+        android:layout_width="184dp"
+        android:layout_height="40dp"
+        android:textSize="16dp"
         android:background="@drawable/shadow"
         android:backgroundTint="@color/Cyan"
         android:text="CONTINUE"
         android:textColor="#ffffff"
-        android:textSize="20dp"
+
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
