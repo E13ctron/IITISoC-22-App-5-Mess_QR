@@ -18,49 +18,60 @@
         android:theme="@style/Theme.MessQR">
 
         <activity
-            android:name=".ActivitySignUpForAdmin"
-            android:exported="false" />
-        <activity
             android:name=".QR_code_generator2"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".qr_code_generator" -->
-        <!-- android:exported="false" /> -->
-        <activity
-            android:name=".QR_Scanner"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+<!--        <activity-->
+<!--            android:name=".qr_code_generator"-->
+<!--            android:exported="false" />-->
+        <activity android:name=".QR_Scanner"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Admin_login"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity8"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity7"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity10"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity9"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SignUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity5"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity4"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity2"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

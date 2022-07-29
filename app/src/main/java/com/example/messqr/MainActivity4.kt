@@ -3,8 +3,10 @@ package com.example.messqr
 import android.content.Intent
 import android.os.Bundle
 import android.os.SystemClock
+import android.view.WindowManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import java.util.*
 
 
 class MainActivity4 : AppCompatActivity() {
@@ -14,21 +16,28 @@ class MainActivity4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
-        var stopWatch:Chronometer=findViewById(R.id.stopwatch)
+        //restrict the screenshot on this specific page
+        if(android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        }
+
+        val currentTime: Date = Calendar.getInstance().time
+        var hours: Int= currentTime.hours
         var scanResult:TextView=findViewById(R.id.scan_result)
         var tick:ImageView=findViewById(R.id.tick_icon)
-        var elapsedMillis: Long = SystemClock.elapsedRealtime() - stopWatch.getBase()
-//720000
-        if(scanid==""){
+        var stopWatch:Chronometer=findViewById(R.id.stopwatch)
+
+        if(scanid!=""){
+            tick.setImageResource(R.drawable.ic_green_circle_200)
+            scanResult.text="The QR Code was Scanned Successfully : "
+            scanResult.textSize=resources.getDimension(R.dimen.font_10)
+            stopWatch.start()
+
+        }
+        else {
             tick.setImageResource(R.drawable.ic_qrcode_default_200)
             scanResult.text="Please Scan"
         }
-        else {tick.setImageResource(R.drawable.ic_green_circle_200)
-            scanResult.text="The QR Code was Scanned Successfully before: "
-            scanResult.textSize=resources.getDimension(R.dimen.font_18)
-            stopWatch.start()
-        }
-
 
         //handle click special meal button
         val button4:Button=findViewById(R.id.button4)
@@ -64,13 +73,19 @@ class MainActivity4 : AppCompatActivity() {
         }
 
         //handle click special meal button
-        val button6:Button=findViewById(R.id.button6)
-        button6.setOnClickListener {
-            Intent(this,QR_Scanner::class.java).also{
-                startActivity(it)
+        val button6: Button = findViewById(R.id.button6)
+        if(hours in 8..10 || hours in 12..14 || hours in 20..22 ) {
+            button6.setOnClickListener {
+                Intent(this, QR_Scanner::class.java).also {
+                    startActivity(it)
+                }
             }
         }
-
+        else{
+            button6.setOnClickListener {
+                Toast.makeText(this, "Please scan at the correct meal timing", Toast.LENGTH_SHORT).show()
+            }
+        }
         //this is only for reference that how it will work
 //        val button6:Button=findViewById(R.id.button6)
 //        button6.setOnClickListener {
