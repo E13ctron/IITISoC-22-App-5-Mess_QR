@@ -9,7 +9,6 @@
         android:name="android.hardware.camera"
         android:required="false" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,15 +16,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MessQR">
+
+        <activity
+            android:name=".ActivitySignUpForAdmin"
+            android:exported="false" />
         <activity
             android:name=".QR_code_generator2"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".qr_code_generator" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".QR_Scanner"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".qr_code_generator"-->
-<!--            android:exported="false" />-->
-        <activity android:name=".QR_Scanner"
-            android:exported="false"/>
-
         <activity
             android:name=".Admin_login"
             android:exported="false" />
