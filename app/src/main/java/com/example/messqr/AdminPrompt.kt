@@ -12,10 +12,12 @@ class AdminPrompt : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_prompt)
-        val password:EditText=findViewById(R.id.editTextTextPassword4)
+
         val button:Button=findViewById(R.id.button9)
-        val verifyPassword=password.text.toString()
+
         button.setOnClickListener {
+            val password:EditText=findViewById(R.id.editTextTextPassword4)
+            val verifyPassword=password.text.toString()
             val string:String="Admin"
             if (verifyPassword == string) {
                 val intent = Intent(this, Admin_login::class.java)
