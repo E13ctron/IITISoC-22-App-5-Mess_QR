@@ -20,7 +20,7 @@ class Admin_login : AppCompatActivity() {
     //progress bar
     private lateinit var progressDialog: ProgressDialog
     //firebase auth
-    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var firebaseAdmin: FirebaseAuth
 
     private var email=""
     private var password=""
@@ -41,7 +41,7 @@ class Admin_login : AppCompatActivity() {
         progressDialog.setCanceledOnTouchOutside(false)
 
         //init firebase auth
-        firebaseAuth= FirebaseAuth.getInstance()
+        firebaseAdmin= FirebaseAuth.getInstance()
 
         //handle click login
         binding.button5.setOnClickListener {
@@ -70,12 +70,12 @@ class Admin_login : AppCompatActivity() {
     private fun fireBaseLogin() {
         //show progress
         progressDialog.show()
-        firebaseAuth.signInWithEmailAndPassword(email, password)
+        firebaseAdmin.signInWithEmailAndPassword(email, password)
             .addOnSuccessListener {
                 //login successful
                 progressDialog.dismiss()
                 //get user info
-                val firebaseUser=firebaseAuth.currentUser
+                val firebaseUser=firebaseAdmin.currentUser
                 val email=firebaseUser!!.email
                 Toast.makeText(this, "Logged in as ${email}", Toast.LENGTH_SHORT).show()
 
