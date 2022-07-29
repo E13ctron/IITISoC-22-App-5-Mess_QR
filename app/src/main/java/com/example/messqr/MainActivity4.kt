@@ -83,6 +83,8 @@ class MainActivity4 : AppCompatActivity() {
         }
         else{
             button6.setOnClickListener {
+                tick.setImageResource(R.drawable.ic_qrcode_default_200)
+                scanResult.text="Scan the QR"
                 Toast.makeText(this, "Please scan at the correct meal timing", Toast.LENGTH_SHORT).show()
             }
         }
