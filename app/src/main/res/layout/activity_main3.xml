@@ -51,8 +51,9 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="176dp"
-        android:layout_height="56dp"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shadow"
         android:backgroundTint="@color/Cyan"
         android:text="CONTINUE"
         android:textColor="#ffffff"

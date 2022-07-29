@@ -81,10 +81,11 @@
 
     <Button
         android:id="@+id/btnGenerateQRcode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GENERATE"
+        android:layout_width="120dp"
+        android:layout_height="47dp"
+        android:background="@drawable/shadow"
         android:backgroundTint="@color/Cyan"
+        android:text="GENERATE"
         app:layout_constraintBottom_toTopOf="@+id/textView27"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

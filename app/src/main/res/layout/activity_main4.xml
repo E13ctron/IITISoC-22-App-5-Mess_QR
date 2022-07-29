@@ -9,8 +9,9 @@
 
     <Button
         android:id="@+id/button4"
+        android:background="@drawable/shadow"
         android:layout_width="153dp"
-        android:layout_height="50dp"
+        android:layout_height="42dp"
         android:backgroundTint="@color/Cyan"
         android:text="@string/special_meal"
         android:textColor="#ffffff"
@@ -93,7 +94,8 @@
     <Button
         android:id="@+id/button6"
         android:layout_width="114dp"
-        android:layout_height="48dp"
+        android:background="@drawable/shadow"
+        android:layout_height="41dp"
         android:backgroundTint="@color/Cyan"
         android:text="SCAN"
         android:textColor="#ffffff"
