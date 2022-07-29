@@ -11,7 +11,7 @@
         android:id="@+id/textView27"
         android:layout_width="0dp"
         android:layout_height="71dp"
-        android:background="@color/Cyan"
+        android:background="@drawable/nav_design"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -46,16 +46,18 @@
 
     <TextView
         android:id="@+id/textView31"
+        android:elevation="@dimen/font_10"
         android:layout_width="326dp"
         android:layout_height="321dp"
         android:layout_marginTop="88dp"
-        android:background="@color/white"
+        android:background="@drawable/white_textview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView30" />
 
     <ImageView
         android:id="@+id/ivQRCode"
+        android:elevation="20dp"
         android:layout_width="310dp"
         android:layout_height="290dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView31"

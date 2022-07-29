@@ -47,7 +47,7 @@
         android:id="@+id/nav_drawer_back"
         android:layout_width="0dp"
         android:layout_height="71dp"
-        android:background="@color/Cyan"
+        android:background="@drawable/nav_design"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,9 +56,10 @@
 
     <TextView
         android:id="@+id/white_back"
+        android:elevation="2dp"
         android:layout_width="323dp"
         android:layout_height="440dp"
-        android:background="@color/white"
+        android:background="@drawable/white_textview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/special_menu_text" />

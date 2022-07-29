@@ -7,6 +7,8 @@
     android:background="@color/dullCyan"
     tools:context=".MainActivity4">
 
+
+
     <Button
         android:id="@+id/button4"
         android:background="@drawable/shadow"
@@ -70,46 +72,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         tools:ignore="TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/nav_bar_back"
-        android:layout_width="0dp"
-        android:layout_height="71dp"
-        android:background="@color/Cyan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView12"
+
         android:layout_width="323dp"
         android:layout_height="414dp"
-        android:background="@color/white"
+        android:background="@drawable/white_textview"
+        android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.678" />
-
     <Button
         android:id="@+id/button6"
+        android:elevation="200dp"
         android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:textSize="16dp"
+        android:layout_height="48dp"
         android:background="@drawable/shadow"
-
         android:backgroundTint="@color/Cyan"
         android:text="SCAN"
         android:textColor="#ffffff"
-
+        android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793"
+        app:layout_constraintVertical_bias="0.803"
         tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/nav_bar_back"
+        android:layout_width="0dp"
+
+        android:layout_height="71dp"
+        android:background="@drawable/nav_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/announce_Ibutton"
@@ -177,38 +180,48 @@
 
     <ImageView
         android:id="@+id/tick_icon"
+        android:elevation="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_qrcode_default_200"
         app:layout_constraintEnd_toEndOf="@id/textView12"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@id/textView12"
-        app:layout_constraintTop_toTopOf="@id/textView12"
-        android:src="@drawable/ic_qrcode_default_200" />
+        app:layout_constraintTop_toTopOf="@id/textView12" />
 
     <TextView
         android:id="@+id/scan_result"
+        android:elevation="15dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/tick_icon"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/tick_icon"
         app:layout_constraintTop_toBottomOf="@id/tick_icon"
         tools:text="Please Scan" />
 
     <Chronometer
         android:id="@+id/stopwatch"
+        android:elevation="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/scan_result"
-        app:layout_constraintEnd_toEndOf="@id/scan_result"
-        app:layout_constraintTop_toBottomOf="@id/scan_result"
         app:layout_constraintBottom_toTopOf="@id/button6"
-        />
+        app:layout_constraintEnd_toEndOf="@id/scan_result"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@id/scan_result"
+        app:layout_constraintTop_toBottomOf="@id/scan_result"
+        app:layout_constraintVertical_bias="0.617" />
 
 
-<!--    <com.budiyev.android.codescanner.CodeScannerView-->
+
+
+    <!--    <com.budiyev.android.codescanner.CodeScannerView-->
 <!--        android:id="@+id/scanner_view"-->
 <!--        android:layout_width="323dp"-->
 <!--        android:layout_height="400dp"-->

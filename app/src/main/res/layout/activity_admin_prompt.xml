@@ -22,7 +22,7 @@
         android:id="@+id/textView8"
         android:layout_width="364dp"
         android:layout_height="256dp"
-        android:background="@color/white"
+        android:background="@drawable/white_textview"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -40,7 +40,7 @@
         android:id="@+id/textView15"
         android:layout_width="414dp"
         android:layout_height="71dp"
-        android:background="@color/Cyan"
+        android:background="@drawable/nav_design"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
