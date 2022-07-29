@@ -21,18 +21,19 @@
         android:id="@+id/imageView"
         android:layout_width="291dp"
         android:layout_height="272dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.278"
-        app:srcCompat="@drawable/group_1"
-        android:importantForAccessibility="no"/>
+        app:srcCompat="@drawable/group_1" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:background="@color/dullCyan"
         android:fontFamily="sans-serif"
         android:text="REGISTER YOURSELF"
@@ -47,6 +48,7 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
+
         android:id="@+id/button"
         android:layout_width="176dp"
         android:layout_height="56dp"
@@ -56,21 +58,25 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.712"
         tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <Button
+
         android:id="@+id/button2"
         android:layout_width="176dp"
         android:layout_height="56dp"
         android:backgroundTint="@color/Cyan"
         android:text="Admin"
         android:textSize="16dp"
+
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.824"
