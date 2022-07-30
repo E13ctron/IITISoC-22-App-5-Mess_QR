@@ -99,7 +99,20 @@ class MainActivity4 : AppCompatActivity() {
 
         //handle click scan button
         val button6: Button = findViewById(R.id.button6)
+        val available:TextView=findViewById(R.id.textView7)
         if (hours in 8..10 || hours in 12..14 || hours in 20..22) {
+            if(hours in 8..10 ){
+                available.text="Breakfast Available"
+            }
+            else if(hours in 12..14 ){
+                available.text="Lunch Available"
+            }
+            if(hours in 20..22 ){
+                available.text="Dinner Available"
+            }
+
+
+
             button6.setOnClickListener {
                 Intent(this, QR_Scanner::class.java).also {
                     startActivity(it)

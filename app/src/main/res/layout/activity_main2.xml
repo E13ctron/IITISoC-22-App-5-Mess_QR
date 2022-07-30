@@ -7,85 +7,72 @@
     android:background="@color/dullCyan"
     tools:context=".MainActivity2">
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView"-->
-    <!--        android:layout_width="412dp"-->
-    <!--        android:layout_height="738dp"-->
-    <!--        android:background="@color/dullCyan"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/mainImage"
         android:layout_width="291dp"
         android:layout_height="272dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="@id/textView4"
-        app:layout_constraintStart_toStartOf="@id/textView4"
-        app:layout_constraintTop_toBottomOf="@id/textView4"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@id/welcomeText"
+        app:layout_constraintStart_toStartOf="@id/welcomeText"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
         app:srcCompat="@drawable/group_1"
         android:importantForAccessibility="no"/>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:background="@color/dullCyan"
         android:fontFamily="sans-serif"
-        android:text="WELCOME"
+        android:text="@string/welcome"
         android:textColor="@color/Cyan"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/studentButton"
         android:layout_width="184dp"
         android:layout_height="40dp"
         android:background="@drawable/shadow"
         android:backgroundTint="@color/Cyan"
-        android:text="Student"
-        android:textSize="16dp"
+        android:text="@string/student"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_marginTop="70dp"
-        app:layout_constraintEnd_toEndOf="@id/imageView"
-        app:layout_constraintStart_toStartOf="@id/imageView"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@id/mainImage"
+        app:layout_constraintStart_toStartOf="@id/mainImage"
+        app:layout_constraintTop_toBottomOf="@id/mainImage"
         tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/adminButton"
         android:layout_width="184dp"
         android:layout_height="40dp"
         android:background="@drawable/shadow"
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/Cyan"
-        android:text="Admin"
-        android:textSize="16dp"
+        android:text="@string/admin"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/button"
-        app:layout_constraintStart_toStartOf="@id/button"
-        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintEnd_toEndOf="@id/studentButton"
+        app:layout_constraintStart_toStartOf="@id/studentButton"
+        app:layout_constraintTop_toBottomOf="@id/studentButton"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="83dp"
         android:layout_marginBottom="20dp"
         android:text="@string/Signup"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/button2"
-        app:layout_constraintStart_toStartOf="@id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
+        app:layout_constraintEnd_toEndOf="@id/adminButton"
+        app:layout_constraintStart_toStartOf="@id/adminButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

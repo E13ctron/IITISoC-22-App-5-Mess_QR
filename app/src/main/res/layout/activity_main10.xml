@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -32,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="CARD NUMBER"
+        android:text="@string/card_number"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -46,10 +45,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="MONTHS(DAYS)"
+        android:text="@string/months_days"
         android:textColor="#000000"
         android:textSize="20sp"
-
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView33"
         app:layout_constraintEnd_toStartOf="@+id/textView35"
@@ -61,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="88dp"
-        android:text="AMOUNT PAID"
+        android:text="@string/amount_paid"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -76,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="124dp"
         android:layout_marginBottom="8dp"
-        android:text="135"
+        android:text="@string/_135"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -89,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="88dp"
-        android:text="Rs.3850/-"
+        android:text="@string/rs_3850"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -101,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="SPECIAL MENU"
+        android:text="@string/special_meal_caps"
         android:textColor="#000000"
         android:textSize="20sp"
 
@@ -138,17 +136,6 @@
         app:layout_constraintBottom_toTopOf="@+id/textView32"
         app:layout_constraintEnd_toEndOf="parent" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView5"-->
-<!--        android:layout_width="252dp"-->
-<!--        android:layout_height="384dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.496"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textView23"-->
-<!--        app:layout_constraintVertical_bias="0.057"-->
-<!--        app:srcCompat="@drawable/whatsapp_image_2022_07_19_at_3_38_04_pm" />-->
 
     <ImageButton
         android:id="@+id/announce_Ibutton"

@@ -8,78 +8,79 @@
     tools:context=".MainActivity3">
 
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="291dp"
-        android:layout_height="272dp"
-        android:importantForAccessibility="no"
-        android:layout_marginTop="45dp"
-        app:layout_constraintEnd_toEndOf="@id/textView6"
-        app:layout_constraintStart_toStartOf="@id/textView6"
-        app:layout_constraintTop_toBottomOf="@id/textView6"
-        app:srcCompat="@drawable/group_1"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="118dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/loginText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@color/dullCyan"
         android:fontFamily="sans-serif"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:textColor="@color/Cyan"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="291dp"
+        android:layout_height="272dp"
+        android:importantForAccessibility="no"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@id/loginText"
+        app:layout_constraintStart_toStartOf="@id/loginText"
+        app:layout_constraintTop_toBottomOf="@id/loginText"
+        app:srcCompat="@drawable/group_1"/>
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/mainImage"
+        app:layout_constraintEnd_toEndOf="@id/mainImage"
+        app:layout_constraintStart_toStartOf="@id/mainImage"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/editTextUserName"
+        app:layout_constraintStart_toStartOf="@id/editTextUserName"
+        app:layout_constraintTop_toBottomOf="@id/editTextUserName"
+        tools:ignore="TextContrastCheck"
+        android:importantForAutofill="no" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="184dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:textSize="16sp"
         android:background="@drawable/shadow"
-        android:layout_marginTop="83dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/Cyan"
-        android:text="CONTINUE"
+        android:text="@string/continue_cap"
         android:textColor="#ffffff"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/editTextTextPassword2"
-        app:layout_constraintStart_toStartOf="@id/editTextTextPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintEnd_toEndOf="@id/editTextPassword"
+        app:layout_constraintStart_toStartOf="@id/editTextPassword"
         tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@id/imageView4"
-        app:layout_constraintEnd_toEndOf="@id/imageView4"
-        app:layout_constraintStart_toStartOf="@id/imageView4"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintEnd_toEndOf="@id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="@id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName"
-        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

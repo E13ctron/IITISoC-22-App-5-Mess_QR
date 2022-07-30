@@ -15,12 +15,13 @@ class MainActivity2 : AppCompatActivity() {
             val intent=Intent(this,SignUpActivity::class.java)
             startActivity(intent)
         }
-        val button:Button=findViewById(R.id.button)
+
+        val button:Button=findViewById(R.id.studentButton)
         button.setOnClickListener {
             val intent2=Intent(this, MainActivity3::class.java)
             startActivity(intent2)
         }
-        val button2:Button=findViewById(R.id.button2)
+        val button2:Button=findViewById(R.id.adminButton)
         button2.setOnClickListener {
             val intent3=Intent(this, AdminPrompt::class.java)
             startActivity(intent3)

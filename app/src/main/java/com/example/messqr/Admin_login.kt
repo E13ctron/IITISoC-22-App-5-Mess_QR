@@ -52,16 +52,16 @@ class Admin_login : AppCompatActivity() {
 
     private fun validateData() {
         //get data
-        email = binding.editTextTextPersonName.text.toString()
-        password = binding.editTextTextPassword2.text.toString()
+        email = binding.editTextUserName.text.toString()
+        password = binding.editTextPassword.text.toString()
 
         ////validate data
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //invalid email format
-            binding.editTextTextPersonName.error = "invalid email format"
+            binding.editTextUserName.error = "invalid email format"
         } else if (TextUtils.isEmpty(password)) {
             //empty password
-            binding.editTextTextPassword2.error = "please enter a password"
+            binding.editTextPassword.error = "please enter a password"
         } else {
             //valid data start login
             fireBaseLogin()

@@ -62,7 +62,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/editTextTextPassword2"
         app:layout_constraintStart_toStartOf="@id/editTextTextPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
         tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <EditText

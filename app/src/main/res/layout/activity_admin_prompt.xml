@@ -7,9 +7,10 @@
     tools:context=".AdminPrompt">
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="418dp"
-        android:layout_height="733dp"
+        android:id="@+id/verification_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,7 +18,7 @@
         app:srcCompat="@drawable/appscrehf" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/white_back"
         android:layout_width="364dp"
         android:layout_height="256dp"
         android:background="@drawable/white_textview"
@@ -27,58 +28,57 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/adminVerificationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:fontFamily="sans-serif"
-        android:text="Admin Verification"
+        android:text="@string/admin_verification"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView37"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8" />
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/white_back"
+        app:layout_constraintStart_toStartOf="@id/white_back"
+        app:layout_constraintTop_toTopOf="@id/white_back" />
 
     <TextView
-        android:id="@+id/textView37"
+        android:id="@+id/passwordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
         android:background="@color/white"
         android:fontFamily="sans-serif"
-        android:text="Password"
+        android:text="@string/password"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword4"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintHorizontal_bias="0.123"
-        app:layout_constraintStart_toStartOf="@+id/textView8" />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/adminVerificationText"
+        app:layout_constraintStart_toStartOf="@id/white_back" />
 
     <EditText
-        android:id="@+id/editTextTextPassword4"
-        android:layout_width="297dp"
+        android:id="@+id/editTextPassword"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="@+id/textView8" />
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordText"
+        app:layout_constraintEnd_toEndOf="@id/adminVerificationText"
+        app:layout_constraintStart_toStartOf="@id/passwordText" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/confirm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/black"
-        android:text="Confirm"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toStartOf="@+id/textView8" />
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toBottomOf="@+id/white_back"
+        app:layout_constraintEnd_toEndOf="@+id/white_back"
+        app:layout_constraintStart_toStartOf="@+id/white_back" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

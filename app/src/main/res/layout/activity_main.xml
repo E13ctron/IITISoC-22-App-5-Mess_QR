@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/appStartBack"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:importantForAccessibility="no"
@@ -20,25 +20,25 @@
         tools:ignore="ImageContrastCheck" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/messText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="Mess"
+        android:text="@string/mess"
         android:textColor="#FFFFFF"
         android:textSize="55sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/textView3"
+        app:layout_constraintBottom_toTopOf="@id/QR_systemText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/QR_systemText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="QR System"
+        android:text="@string/qr_system"
         android:textAlignment="textEnd"
         android:textColor="#ffffff"
         android:textSize="55sp"
@@ -48,4 +48,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

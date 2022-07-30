@@ -13,12 +13,12 @@ class AdminPrompt : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_prompt)
 
-        val button:Button=findViewById(R.id.button9)
+        val button:Button=findViewById(R.id.confirm_button)
 
         button.setOnClickListener {
-            val password:EditText=findViewById(R.id.editTextTextPassword4)
+            val password:EditText=findViewById(R.id.editTextPassword)
             val verifyPassword=password.text.toString()
-            val string:String="Admin"
+            val string ="Admin"
             if (verifyPassword == string) {
                 val intent = Intent(this, Admin_login::class.java)
                 startActivity(intent)

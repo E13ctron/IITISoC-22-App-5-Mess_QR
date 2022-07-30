@@ -28,6 +28,8 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         tools:text="@string/timer"
         android:layout_marginEnd="60dp"
         app:layout_constraintBottom_toBottomOf="@id/button4"
