@@ -16,10 +16,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView7"
-        android:layout_width="53dp"
-        android:layout_height="48dp"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:background="@color/Cyan"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,4 +95,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etData"
         app:layout_constraintVertical_bias="0.34" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:background="@color/Cyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_mail_outline_24"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="671dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
