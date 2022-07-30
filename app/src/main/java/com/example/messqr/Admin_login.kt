@@ -44,7 +44,7 @@ class Admin_login : AppCompatActivity() {
         firebaseAdmin= FirebaseAuth.getInstance()
 
         //handle click login
-        binding.button5.setOnClickListener {
+        binding.button3.setOnClickListener {
             //validate data
             validateData()
         }
@@ -52,16 +52,16 @@ class Admin_login : AppCompatActivity() {
 
     private fun validateData() {
         //get data
-        email = binding.textView5.text.toString()
-        password = binding.textView11.text.toString()
+        email = binding.editTextTextPersonName.text.toString()
+        password = binding.editTextTextPassword2.text.toString()
 
         ////validate data
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //invalid email format
-            binding.textView5.error = "invalid email format"
+            binding.editTextTextPersonName.error = "invalid email format"
         } else if (TextUtils.isEmpty(password)) {
             //empty password
-            binding.textView11.error = "please enter a password"
+            binding.editTextTextPassword2.error = "please enter a password"
         } else {
             //valid data start login
             fireBaseLogin()

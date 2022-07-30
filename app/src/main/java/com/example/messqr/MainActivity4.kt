@@ -22,17 +22,15 @@ class MainActivity4 : AppCompatActivity() {
         }
 
         val currentTime: Date = Calendar.getInstance().time
-        var hours: Int= currentTime.hours
-        var scanResult:TextView=findViewById(R.id.scan_result)
-        var tick:ImageView=findViewById(R.id.tick_icon)
-        var stopWatch:Chronometer=findViewById(R.id.stopwatch)
-
+        val hours: Int= currentTime.hours
+        val scanResult:TextView=findViewById(R.id.scan_result)
+        val tick:ImageView=findViewById(R.id.tick_icon)
+        val stopWatch: Chronometer =findViewById(R.id.stopwatch)
         if(scanid!=""){
             tick.setImageResource(R.drawable.ic_green_circle_200)
             scanResult.text="The QR Code was Scanned Successfully : "
             scanResult.textSize=resources.getDimension(R.dimen.font_10)
             stopWatch.start()
-
         }
         else {
             tick.setImageResource(R.drawable.ic_qrcode_default_200)
@@ -46,7 +44,18 @@ class MainActivity4 : AppCompatActivity() {
                 startActivity(it)
             }
         }
-
+//        if(hours in 20..22 ) {
+//            button4.setOnClickListener {
+//                Intent(this,MainActivity8::class.java).also{
+//                    startActivity(it)
+//                }
+//            }
+//        }
+//        else{
+//            button4.setOnClickListener {
+//                Toast.makeText(this, "Special menu only available during dinner", Toast.LENGTH_SHORT).show()
+//            }
+//        }
 
         //handle click announcement Image button
         val announceImageButtonButton:ImageButton =  findViewById(R.id.announce_Ibutton)
@@ -80,7 +89,7 @@ class MainActivity4 : AppCompatActivity() {
             }
         }
 
-        //handle click special meal button
+        //handle click scan button
         val button6: Button = findViewById(R.id.button6)
         if(hours in 8..10 || hours in 12..14 || hours in 20..22 ) {
             button6.setOnClickListener {

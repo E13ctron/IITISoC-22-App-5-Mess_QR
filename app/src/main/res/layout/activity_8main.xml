@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/back_color"
-        android:layout_width="417dp"
-        android:layout_height="742dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/dullCyan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,6 +23,7 @@
         android:text="@string/dinner_available"
         android:layout_marginTop="30dp"
         android:padding="20dp"
+        android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -50,10 +51,7 @@
         android:background="@drawable/nav_design"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
+        app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/white_back"
         android:elevation="2dp"
@@ -69,19 +67,16 @@
         android:background="@drawable/shadow"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:backgroundTint="@color/Cyan"
         android:text="@string/scan"
         android:textColor="#ffffff"
-
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
-        tools:targetApi="lollipop" />
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/white_back"
+        app:layout_constraintEnd_toEndOf="@id/white_back"
+        app:layout_constraintStart_toStartOf="@id/white_back"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
     <ImageButton
         android:id="@+id/announce_Ibutton"
         android:layout_width="wrap_content"

@@ -4,96 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivitySignUpForAdmin">
+    android:background="@color/dullCyan"
+    tools:context=".MainActivity3">
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="417dp"
-        android:layout_height="742dp"
-        android:background="@color/dullCyan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView3"
+   <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="291dp"
         android:layout_height="272dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278"
+        android:importantForAccessibility="no"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="@id/textView6"
+        app:layout_constraintStart_toStartOf="@id/textView6"
+        app:layout_constraintTop_toBottomOf="@id/textView6"
         app:srcCompat="@drawable/group_1"
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="118dp" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-
+        android:layout_marginTop="50dp"
         android:background="@color/dullCyan"
         android:fontFamily="sans-serif"
-        android:text="ADMIN SIGN UP"
+        android:text="LOGIN"
         android:textColor="@color/Cyan"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.018"
         tools:ignore="TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Username"
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="184dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:background="@drawable/shadow"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/Cyan"
+        android:text="CREATE"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintEnd_toEndOf="@id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView4"
+        app:layout_constraintEnd_toEndOf="@id/imageView4"
+        app:layout_constraintStart_toStartOf="@id/imageView4"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:hint="Password"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737"
-        />
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName"
+        tools:ignore="TextContrastCheck" />
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="184dp"
-        android:layout_height="42dp"
-        android:textSize="16dp"
-        android:text="Create Account"
-
-        app:backgroundTint="@color/Cyan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="@+id/textView23"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -44,7 +44,7 @@ class SignUpActivity : AppCompatActivity() {
         firebaseAuth=FirebaseAuth.getInstance()
 
         //handle click create account button
-        binding.button7.setOnClickListener {
+        binding.button3.setOnClickListener {
             //validate data
             validateData()
         }
@@ -52,21 +52,21 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun validateData() {
         //get data
-        email=binding.editTextTextPersonName2.text.toString()
-        password=binding.editTextTextPassword.text.toString()
+        email=binding.editTextTextPersonName.text.toString()
+        password=binding.editTextTextPassword2.text.toString()
 
         //validate data
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches())
         {
-            binding.editTextTextPersonName2.error="invalid email format"
+            binding.editTextTextPersonName.error="invalid email format"
         }
         else if (TextUtils.isEmpty(password))
         {
-            binding.editTextTextPassword.error="please enter a password"
+            binding.editTextTextPassword2.error="please enter a password"
         }
         else if (password.length<5)
         {
-            binding.editTextTextPassword.error="password must be at least 5 characters long"
+            binding.editTextTextPassword2.error="password must be at least 5 characters long"
         }
         else
         {
