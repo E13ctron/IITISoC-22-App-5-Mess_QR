@@ -1,13 +1,11 @@
 package com.example.messqr
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import com.example.messqr.R
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.WriterException
@@ -26,6 +24,14 @@ class QR_code_generator2 : AppCompatActivity() {
         ivQRcode=findViewById(R.id.ivQRCode)
         etData=findViewById(R.id.etData)
         btnGenerateQRcode=findViewById(R.id.btnGenerateQRcode)
+        val mailButton: ImageButton=findViewById(R.id.imageButton4)
+
+        mailButton.setOnClickListener {
+            Intent(this, Admin_Announcement::class.java).also{
+                startActivity(it)
+            }
+        }
+
 
         btnGenerateQRcode.setOnClickListener {
             val data=etData.text.toString().trim()

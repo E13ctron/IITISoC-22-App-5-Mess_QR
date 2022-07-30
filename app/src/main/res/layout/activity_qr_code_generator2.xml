@@ -27,7 +27,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView27"
         app:srcCompat="@drawable/ic_baseline_qr_code_24" />
-
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Cyan"
+        app:layout_constraintTop_toTopOf="@id/imageView7"
+        app:layout_constraintBottom_toBottomOf="@id/imageView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/imageView7"
+        app:srcCompat="@drawable/ic_baseline_mail_outline_24"
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="671dp" />
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"

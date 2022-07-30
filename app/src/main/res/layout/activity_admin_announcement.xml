@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:elevation="1dp"
+
         android:layout_width="414dp"
         android:layout_height="584dp"
         android:background="@drawable/white_textview"
@@ -20,31 +20,38 @@
         android:id="@+id/textView27"
         android:layout_width="0dp"
         android:layout_height="71dp"
-        android:elevation="2dp"
+
         android:background="@drawable/nav_design"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView7"
-        android:elevation="2dp"
         android:layout_width="53dp"
         android:layout_height="48dp"
+        android:elevation="2dp"
+        android:background="@color/Cyan"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView27"
-        app:srcCompat="@drawable/ic_baseline_qr_code_24" />
+        app:srcCompat="@drawable/ic_baseline_qr_code_24"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:elevation="2dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/Cyan"
+
+        app:layout_constraintTop_toTopOf="@id/imageView7"
+        app:layout_constraintBottom_toBottomOf="@id/imageView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/imageView7"
         app:srcCompat="@drawable/ic_baseline_mail_outline_24"
+        tools:ignore="ImageContrastCheck"
         tools:layout_editor_absoluteX="92dp"
         tools:layout_editor_absoluteY="671dp" />
 
@@ -69,7 +76,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="3dp"
+
         android:text="HEADING"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -81,8 +88,9 @@
         android:id="@+id/textView41"
         android:layout_width="354dp"
         android:layout_height="62dp"
-        android:elevation="1"
-android:hint="  Enter the Heading"
+
+        android:hint="  Enter the Heading"
+        tools:ignore="TextContrastCheck"
         tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="214dp" />
 
@@ -90,7 +98,7 @@ android:hint="  Enter the Heading"
         android:id="@+id/textView42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="3dp"
+
         android:text="DATE"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -102,7 +110,7 @@ android:hint="  Enter the Heading"
         android:id="@+id/editTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="1dp"
+
         android:ems="10"
         android:hint="  DD-MM-YYYY"
         android:inputType="date"
@@ -113,7 +121,7 @@ android:hint="  Enter the Heading"
         android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="3dp"
+
         android:text="DESCRIPTION"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -126,7 +134,7 @@ android:hint="  Enter the Heading"
 
         android:layout_width="354dp"
         android:layout_height="62dp"
-        android:elevation="1"
+
         android:hint="  Enter the Details"
         tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="427dp" />
@@ -135,7 +143,7 @@ android:hint="  Enter the Heading"
         android:id="@+id/textView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="3dp"
+
         android:text="PRICE"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -147,7 +155,7 @@ android:hint="  Enter the Heading"
         android:id="@+id/textView46"
         android:layout_width="354dp"
         android:layout_height="62dp"
-        android:elevation="1"
+
         android:hint="  Enter the Price if applicable"
         tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="541dp" />
