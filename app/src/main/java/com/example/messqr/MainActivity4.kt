@@ -3,10 +3,14 @@ package com.example.messqr
 import android.content.Intent
 import android.os.Bundle
 import android.os.SystemClock
+import android.view.PixelCopy.request
 import android.view.WindowManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import java.util.*
+import java.util.jar.Manifest
 
 
 class MainActivity4 : AppCompatActivity() {
@@ -16,9 +20,13 @@ class MainActivity4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
+
         //restrict the screenshot on this specific page
-        if(android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
+            getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE
+            );
         }
 
         val currentTime: Date = Calendar.getInstance().time
@@ -28,13 +36,13 @@ class MainActivity4 : AppCompatActivity() {
         val stopWatch: Chronometer =findViewById(R.id.stopwatch)
         if(scanid!=""){
             tick.setImageResource(R.drawable.ic_green_circle_200)
-            scanResult.text="The QR Code was Scanned Successfully : "
-            scanResult.textSize=resources.getDimension(R.dimen.font_10)
+            scanResult.text = "The QR Code was Scanned Successfully : "
+            scanResult.textSize = resources.getDimension(R.dimen.font_10)
             stopWatch.start()
         }
         else {
             tick.setImageResource(R.drawable.ic_qrcode_default_200)
-            scanResult.text="Please Scan"
+            scanResult.text = "Please Scan"
         }
 
         //handle click special meal button
@@ -58,31 +66,31 @@ class MainActivity4 : AppCompatActivity() {
 //        }
 
         //handle click announcement Image button
-        val announceImageButtonButton:ImageButton =  findViewById(R.id.announce_Ibutton)
+        val announceImageButtonButton: ImageButton = findViewById(R.id.announce_Ibutton)
         announceImageButtonButton.setOnClickListener {
-            Intent(this,MainActivity9::class.java).also{
+            Intent(this, MainActivity9::class.java).also {
                 startActivity(it)
             }
         }
 
         //handle click payment Image button
-        val paymentImageButton:ImageButton =  findViewById(R.id.payment_Ibutton)
+        val paymentImageButton: ImageButton = findViewById(R.id.payment_Ibutton)
         paymentImageButton.setOnClickListener {
-            Intent(this,MainActivity5::class.java).also{
+            Intent(this, MainActivity5::class.java).also {
                 startActivity(it)
             }
         }
 
         //handle click history Image button
-        val historyImageButton:ImageButton =  findViewById(R.id.history_Ibutton)
+        val historyImageButton: ImageButton = findViewById(R.id.history_Ibutton)
         historyImageButton.setOnClickListener {
-            Intent(this,MainActivity10::class.java).also{
+            Intent(this, MainActivity10::class.java).also {
                 startActivity(it)
             }
         }
 
         //handle click profile button
-        val profileImageButton: ImageButton=findViewById(R.id.profile_Ibutton)
+        val profileImageButton: ImageButton = findViewById(R.id.profile_Ibutton)
         profileImageButton.setOnClickListener {
             Intent(this, ProfileScreen::class.java).also {
                 startActivity(it)
@@ -91,21 +99,32 @@ class MainActivity4 : AppCompatActivity() {
 
         //handle click scan button
         val button6: Button = findViewById(R.id.button6)
-        if(hours in 8..10 || hours in 12..14 || hours in 20..22 ) {
+        if (hours in 8..10 || hours in 12..14 || hours in 20..22) {
             button6.setOnClickListener {
                 Intent(this, QR_Scanner::class.java).also {
                     startActivity(it)
                 }
             }
-        }
-        else{
+        } else {
             button6.setOnClickListener {
                 tick.setImageResource(R.drawable.ic_qrcode_default_200)
-                scanResult.text="Scan the QR"
-                Toast.makeText(this, "Please scan at the correct meal timing", Toast.LENGTH_SHORT).show()
+                scanResult.text = "Scan the QR"
+                Toast.makeText(this, "Please scan at the correct meal timing", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
-        //this is only for reference that how it will work
+        //handle click special meal button
+        val buttonSpecialMeal: Button = findViewById(R.id.button4)
+        buttonSpecialMeal.setOnClickListener {
+            Intent(this, MainActivity8::class.java).also {
+                startActivity(it)
+            }
+        }
+
+
+    }
+}
+    //this is only for reference that how it will work
 //        val button6:Button=findViewById(R.id.button6)
 //        button6.setOnClickListener {
 //            val intent2=Intent(this, MainActivity10::class.java)
@@ -119,5 +138,3 @@ class MainActivity4 : AppCompatActivity() {
 //            startActivity(intent3)
 //        }
 
-    }
-}

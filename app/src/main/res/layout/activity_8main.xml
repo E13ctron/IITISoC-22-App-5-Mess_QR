@@ -146,4 +146,45 @@
         app:layout_constraintStart_toEndOf="@id/history_Ibutton"
         app:layout_constraintTop_toTopOf="@id/history_Ibutton"/>
 
+    <ImageView
+        android:id="@+id/tick_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="15dp"
+
+        android:src="@drawable/ic_qrcode_default_200"
+        app:layout_constraintEnd_toEndOf="@+id/white_back"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/white_back"
+        app:layout_constraintTop_toBottomOf="@+id/special_menu_text" />
+
+    <TextView
+        android:id="@+id/scan_result"
+        android:elevation="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tick_icon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tick_icon"
+        app:layout_constraintTop_toBottomOf="@id/tick_icon"
+        tools:text="Please Scan" />
+    <Chronometer
+        android:id="@+id/stopwatch"
+        android:elevation="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/scan_button"
+        app:layout_constraintEnd_toEndOf="@id/scan_result"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@id/scan_result"
+        app:layout_constraintTop_toBottomOf="@id/scan_result"
+        app:layout_constraintVertical_bias="0.617" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

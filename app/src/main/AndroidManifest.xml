@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MessQR">
         <activity
+            android:name=".QR_scanner_specialMeal"
+            android:exported="false" />
+        <activity
             android:name=".ProfileScreen"
             android:exported="false" />
         <activity
