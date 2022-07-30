@@ -72,6 +72,14 @@ class MainActivity4 : AppCompatActivity() {
             }
         }
 
+        //handle click profile button
+        val profileImageButton: ImageButton=findViewById(R.id.profile_Ibutton)
+        profileImageButton.setOnClickListener {
+            Intent(this, ProfileScreen::class.java).also {
+                startActivity(it)
+            }
+        }
+
         //handle click special meal button
         val button6: Button = findViewById(R.id.button6)
         if(hours in 8..10 || hours in 12..14 || hours in 20..22 ) {

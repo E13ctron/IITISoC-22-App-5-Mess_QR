@@ -38,5 +38,14 @@ class MainActivity5 : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        //handle click profile button
+        val profileImageButton: ImageButton=findViewById(R.id.profile_Ibutton)
+        profileImageButton.setOnClickListener {
+            Intent(this, ProfileScreen::class.java).also {
+                startActivity(it)
+            }
+        }
+
     }
 }

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dullCyan"
+    tools:context=".ProfileScreen">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="PROFILE"
+        android:textColor="@color/Cyan"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="@drawable/nav_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView5"-->
+    <!--        android:layout_width="252dp"-->
+    <!--        android:layout_height="384dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.496"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView23"-->
+    <!--        app:layout_constraintVertical_bias="0.057"-->
+    <!--        app:srcCompat="@drawable/whatsapp_image_2022_07_19_at_3_38_04_pm" />-->
+
+    <ImageButton
+        android:id="@+id/announce_Ibutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@color/Cyan"
+        android:importantForAccessibility="no"
+        android:minWidth="48dp"
+        android:src="@drawable/ic_baseline_notifications_none_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/payment_Ibutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView24" />
+
+    <ImageButton
+        android:id="@+id/payment_Ibutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Cyan"
+        android:importantForAccessibility="no"
+        android:minWidth="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/announce_Ibutton"
+        app:layout_constraintEnd_toStartOf="@id/scan_Ibutton"
+        app:layout_constraintStart_toEndOf="@id/announce_Ibutton"
+        app:layout_constraintTop_toTopOf="@id/announce_Ibutton"
+        app:srcCompat="@drawable/ic_payment_icon_24" />
+
+    <ImageButton
+        android:id="@+id/scan_Ibutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Cyan"
+        android:importantForAccessibility="no"
+        android:minWidth="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/payment_Ibutton"
+        app:layout_constraintEnd_toStartOf="@id/history_Ibutton"
+        app:layout_constraintStart_toEndOf="@id/payment_Ibutton"
+        app:layout_constraintTop_toTopOf="@id/payment_Ibutton"
+        app:srcCompat="@drawable/ic_scanner_24" />
+
+    <ImageButton
+        android:id="@+id/history_Ibutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Cyan"
+        android:importantForAccessibility="no"
+        android:minWidth="48dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/payment_Ibutton"
+        app:layout_constraintEnd_toStartOf="@id/profile_Ibutton"
+        app:layout_constraintStart_toEndOf="@id/scan_Ibutton"
+        app:layout_constraintTop_toTopOf="@id/payment_Ibutton"
+        app:srcCompat="@drawable/ic_history_24" />
+
+    <ImageButton
+        android:id="@+id/profile_Ibutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_back"
+        android:importantForAccessibility="no"
+        android:minWidth="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintBottom_toBottomOf="@id/history_Ibutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/history_Ibutton"
+        app:layout_constraintTop_toTopOf="@id/history_Ibutton" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/teal_700"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are logged in as"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:layout_constraintVertical_bias="0.693" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
