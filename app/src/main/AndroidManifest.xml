@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MessQR">
         <activity
+            android:name=".enterAnnounce"
+            android:exported="false" />
+        <activity
             android:name=".Admin_Announcement"
             android:exported="false" />
         <activity

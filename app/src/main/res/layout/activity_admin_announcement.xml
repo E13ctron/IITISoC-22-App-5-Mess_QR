@@ -189,8 +189,8 @@ which is going to serve today"
 
     <TextView
         android:id="@+id/textView40"
-        android:layout_width="334dp"
-        android:layout_height="102dp"
+        android:layout_width="323dp"
+        android:layout_height="105dp"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="466dp" />
 
