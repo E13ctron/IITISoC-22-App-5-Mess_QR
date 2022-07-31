@@ -17,6 +17,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MessQR">
         <activity
+            android:name=".details_of_gm"
+            android:exported="false" />
+        <activity
+            android:name=".details_of_mc"
+            android:exported="false" />
+        <activity
+            android:name=".details_of_sm"
+            android:exported="false" />
+        <activity
+            android:name=".gm_announce"
+            android:exported="false" />
+        <activity
+            android:name=".mc_announce"
+            android:exported="false" />
+        <activity
             android:name=".enterAnnounce"
             android:exported="false" />
         <activity

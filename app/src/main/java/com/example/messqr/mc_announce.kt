@@ -3,9 +3,9 @@ package com.example.messqr
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class enterAnnounce : AppCompatActivity() {
+class mc_announce : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sm_announce)
+        setContentView(R.layout.activity_mc_announce)
     }
 }
