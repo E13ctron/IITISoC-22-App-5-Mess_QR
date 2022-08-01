@@ -57,7 +57,7 @@ dependencies {
 
     implementation('com.journeyapps:zxing-android-embedded:4.3.0') { transitive = false }
     implementation 'com.google.zxing:core:3.3.3'
-
+    implementation 'com.razorpay:checkout:1.6.19'
     implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
 }
 
