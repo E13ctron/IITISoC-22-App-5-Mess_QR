@@ -126,18 +126,12 @@ class MainActivity4 : AppCompatActivity() {
                     .show()
             }
         }
-        //handle click special meal button
-        val buttonSpecialMeal: Button = findViewById(R.id.button4)
-        buttonSpecialMeal.setOnClickListener {
-            Intent(this, MainActivity8::class.java).also {
-                startActivity(it)
-            }
-        }
-
-
     }
+
+
 }
-    //this is only for reference that how it will work
+
+//this is only for reference that how it will work
 //        val button6:Button=findViewById(R.id.button6)
 //        button6.setOnClickListener {
 //            val intent2=Intent(this, MainActivity10::class.java)
