@@ -1,20 +1,30 @@
 package com.example.messqr
 
+import android.Manifest
+import android.content.ContentValues
 import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.Window
 import android.view.WindowManager
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 
 public var scanid: String=""
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        this.getWindow().setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
         getSupportActionBar()?.hide();
         setContentView(R.layout.activity_main)
 
@@ -26,10 +36,11 @@ class MainActivity : AppCompatActivity() {
 
         //we use post delay methode to tell how time it has to run
         Handler().postDelayed({
-            val intent=Intent(this, MainActivity2::class.java )
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
             finish()
         }, 3000)
     }
 }
+
 
