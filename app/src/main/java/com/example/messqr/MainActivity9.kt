@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.TextView
 
 class MainActivity9 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +39,24 @@ class MainActivity9 : AppCompatActivity() {
         val profileImageButton: ImageButton=findViewById(R.id.profile_Ibutton)
         profileImageButton.setOnClickListener {
             Intent(this, ProfileScreen::class.java).also {
+                startActivity(it)
+            }
+        }
+        val sm: TextView =findViewById(R.id.textView34)
+        sm.setOnClickListener {
+            Intent(this,details_of_sm::class.java).also{
+                startActivity(it)
+            }
+        }
+        val mc: TextView =findViewById(R.id.textView37)
+        mc.setOnClickListener {
+            Intent(this,details_of_mc::class.java).also{
+                startActivity(it)
+            }
+        }
+        val gm: TextView =findViewById(R.id.textView40)
+        gm.setOnClickListener {
+            Intent(this,details_of_gm::class.java).also{
                 startActivity(it)
             }
         }
