@@ -27,6 +27,9 @@
             android:name=".details_of_sm"
             android:exported="false" />
         <activity
+            android:name=".sm_announce"
+            android:exported="false" />
+        <activity
             android:name=".gm_announce"
             android:exported="false" />
         <activity
