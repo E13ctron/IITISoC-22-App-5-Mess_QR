@@ -9,29 +9,31 @@
 
     <TextView
         android:id="@+id/white_back"
-        android:layout_width="413dp"
-        android:layout_height="604dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/white_textview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.874"/>
+        app:layout_constraintTop_toBottomOf="@id/announceText" />
+
 
     <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/dullCyan"
-        android:text="@string/announcement"
-        android:textAlignment="center"
-        android:textColor="@color/Cyan"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="30dp" />
+    android:id="@+id/announceText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/dullCyan"
+    android:fontFamily="sans-serif"
+    android:text="@string/announcement"
+    android:textColor="@color/Cyan"
+    android:textSize="35sp"
+    android:textStyle="bold"
+    android:layout_marginTop="40dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="TextContrastCheck" />
+
 
     <TextView
         android:id="@+id/nav_bar_back"
@@ -103,7 +105,6 @@
         android:layout_marginEnd="8dp"
         android:background="@color/Cyan"
         android:importantForAccessibility="no"
-
         android:minWidth="48dp"
         android:src="@drawable/ic_baseline_account_circle_24"
         app:layout_constraintBottom_toBottomOf="@id/history_Ibutton"
@@ -111,127 +112,145 @@
         app:layout_constraintStart_toEndOf="@id/history_Ibutton"
         app:layout_constraintTop_toTopOf="@id/history_Ibutton" />
 
+    <TextView
+        android:id="@+id/special_meal_back"
+        android:layout_width="335dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/announceText" />
+
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/special_menu_image"
         android:layout_width="82dp"
         android:layout_height="103dp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="188dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="@id/special_meal_back"
+        app:layout_constraintTop_toTopOf="@id/special_meal_back"
+        app:layout_constraintBottom_toBottomOf="@id/special_meal_back"
         tools:srcCompat="@drawable/group_47" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="189dp"
+        android:id="@+id/special_menu_text"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:text="Special Meal"
+        android:text="@string/special_meal"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="202dp" />
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@id/special_meal_back"
+        app:layout_constraintStart_toEndOf="@id/special_menu_image"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/special_menu_line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="304dp"
-        tools:srcCompat="@drawable/line_1" />
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@id/special_meal_back"
+        app:layout_constraintStart_toStartOf="@id/special_meal_back"
+        app:srcCompat="@drawable/line_1"
+        />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/desc_special_menu_announce"
         android:layout_width="210dp"
-        android:layout_height="42dp"
-        android:text="Details of the special meal
-which is going to serve today"
-        android:textSize="12dp"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="236dp" />
+        android:layout_height="wrap_content"
+        android:text="@string/desc_special_menu_user"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/special_menu_text"
+        app:layout_constraintStart_toStartOf="@id/special_menu_text"/>
 
+    <TextView
+        android:id="@+id/menu_change_back"
+        android:layout_width="335dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/special_meal_back"
+        app:layout_constraintEnd_toEndOf="@id/special_meal_back"
+        app:layout_constraintTop_toBottomOf="@id/special_menu_line"/>
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/menu_change_image"
         android:layout_width="82dp"
         android:layout_height="103dp"
-
         app:srcCompat="@drawable/group_49"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="323dp" />
+        app:layout_constraintStart_toStartOf="@id/menu_change_back"
+        app:layout_constraintTop_toTopOf="@id/menu_change_back"
+        app:layout_constraintBottom_toBottomOf="@id/menu_change_back"
+        android:importantForAccessibility="no" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="187dp"
-        android:layout_height="32dp"
-        android:text="Menu Change"
+        android:id="@+id/menu_change_text"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/menu_change"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="337dp" />
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@id/menu_change_back"
+        app:layout_constraintStart_toEndOf="@id/menu_change_image"/>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/desc_menu_change_announce"
         android:layout_width="210dp"
-        android:layout_height="42dp"
-        android:text="Details of the change in the menu which is going to serve"
-        android:textSize="12dp"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="369dp" />
+        android:layout_height="wrap_content"
+        android:text="@string/desc_menu_change_user"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/menu_change_text"
+        app:layout_constraintTop_toBottomOf="@id/menu_change_text"/>
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/menu_change_line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/line_1"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="449dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="82dp"
-        android:layout_height="103dp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="466dp"
-        tools:srcCompat="@drawable/group_50" />
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@id/menu_change_back"
+        app:layout_constraintStart_toStartOf="@id/menu_change_back"/>
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="187dp"
-        android:layout_height="32dp"
-        android:text="General Mail"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="481dp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="210dp"
-        android:layout_height="42dp"
-        android:text="Details related to the mess"
-        android:textSize="12dp"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="513dp" />
-
-    <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/general_mail_back"
         android:layout_width="335dp"
         android:layout_height="118dp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="173dp" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/menu_change_back"
+        app:layout_constraintEnd_toEndOf="@id/menu_change_back"
+        app:layout_constraintTop_toBottomOf="@id/menu_change_back" />
+
+
+    <ImageView
+        android:id="@+id/general_mail_image"
+        android:layout_width="82dp"
+        android:layout_height="103dp"
+        app:layout_constraintStart_toStartOf="@id/general_mail_back"
+        app:layout_constraintTop_toTopOf="@id/general_mail_back"
+        app:layout_constraintBottom_toBottomOf="@id/general_mail_back"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/group_50" />
 
     <TextView
-        android:id="@+id/textView37"
-        android:layout_width="341dp"
-        android:layout_height="125dp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="312dp" />
+        android:id="@+id/general_mail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/general_mail"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@id/general_mail_back"
+        app:layout_constraintStart_toEndOf="@id/general_mail_image" />
 
     <TextView
-        android:id="@+id/textView40"
-        android:layout_width="323dp"
-        android:layout_height="105dp"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="464dp" />
+        android:id="@+id/desc_general_mail_announce"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_general_mail_user"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/general_mail_text"
+        app:layout_constraintTop_toBottomOf="@id/general_mail_text" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

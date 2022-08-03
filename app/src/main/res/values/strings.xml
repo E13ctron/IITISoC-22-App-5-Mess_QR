@@ -44,4 +44,12 @@
     <string name="amount_paid">AMOUNT PAID</string>
     <string name="_135">135</string>
     <string name="rs_3850">Rs.3850/-</string>
+    <string name="description_special_menu_admin_announcement">Announce the details of the special meal which is going to serve today</string>
+    <string name="menu_change">Menu Change</string>
+    <string name="desc_menu_change">Announce the details of the change in the menu which is going to serve</string>
+    <string name="general_mail">General Mail</string>
+    <string name="desc_general_mail_admin_announce">Announce the general details related to the mess</string>
+    <string name="desc_special_menu_user">Details of the special meal which is going to serve today</string>
+    <string name="desc_menu_change_user">Details of the change in the menu which is going to serve</string>
+    <string name="desc_general_mail_user">Details related to the mess</string>
 </resources>

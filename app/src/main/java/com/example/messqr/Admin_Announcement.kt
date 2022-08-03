@@ -12,20 +12,24 @@ class Admin_Announcement : AppCompatActivity() {
         setContentView(R.layout.activity_admin_announcement)
 
 
-
-        val mc: TextView =findViewById(R.id.textView37)
+        //meal change
+        val mc: TextView =findViewById(R.id.menu_change_back)
         mc.setOnClickListener {
             Intent(this,mc_announce::class.java).also{
                 startActivity(it)
             }
         }
-        val gm: TextView =findViewById(R.id.textView40)
+
+        //general mail
+        val gm: TextView =findViewById(R.id.general_mail_back)
         gm.setOnClickListener {
             Intent(this,gm_announce::class.java).also{
                 startActivity(it)
             }
         }
-        val sm: TextView =findViewById(R.id.textView34)
+
+        //special meal
+        val sm: TextView =findViewById(R.id.special_meal_back)
         sm.setOnClickListener {
             Intent(this,sm_announce::class.java).also{
                 startActivity(it)
