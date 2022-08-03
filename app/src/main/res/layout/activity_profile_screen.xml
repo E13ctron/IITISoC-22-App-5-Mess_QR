@@ -8,11 +8,11 @@
     tools:context=".ProfileScreen">
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/profile_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="PROFILE"
+        android:text="@string/profile_cap"
         android:textColor="@color/Cyan"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/nav_bar_back"
         android:layout_width="match_parent"
         android:layout_height="71dp"
         android:background="@drawable/nav_design"
@@ -53,7 +53,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/payment_Ibutton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textView24" />
+        app:layout_constraintTop_toTopOf="@id/nav_bar_back" />
 
     <ImageButton
         android:id="@+id/payment_Ibutton"
@@ -109,44 +109,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/history_Ibutton"
         app:layout_constraintTop_toTopOf="@id/history_Ibutton" />
-
     <TextView
-        android:id="@+id/textView38"
+        android:id="@+id/logged_in_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="@string/you_are_logged_in_as"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_text" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
         android:textColor="@color/teal_700"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
+        android:layout_marginTop="20dp"
+        android:padding="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView39"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintTop_toBottomOf="@+id/logged_in_text"/>
 
-    <TextView
-        android:id="@+id/textView39"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="You are logged in as"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23"
-        app:layout_constraintVertical_bias="0.143" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/log_out_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
-        android:text="Log Out"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/log_out"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@id/nav_bar_back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23"
-        app:layout_constraintVertical_bias="0.693" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

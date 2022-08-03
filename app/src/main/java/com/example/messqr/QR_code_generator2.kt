@@ -24,7 +24,7 @@ class QR_code_generator2 : AppCompatActivity() {
         ivQRcode=findViewById(R.id.ivQRCode)
         etData=findViewById(R.id.etData)
         btnGenerateQRcode=findViewById(R.id.btnGenerateQRcode)
-        val mailButton: ImageButton=findViewById(R.id.imageButton4)
+        val mailButton: ImageButton=findViewById(R.id.announce_Ibutton)
 
         mailButton.setOnClickListener {
             Intent(this, Admin_Announcement::class.java).also{

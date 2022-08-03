@@ -43,7 +43,8 @@
         android:id="@+id/announce_Ibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/Cyan"
+        android:background="@drawable/round_back"
+        android:padding="8dp"
         android:importantForAccessibility="no"
         app:layout_constraintTop_toTopOf="@id/qr_generate_Ibutton"
         app:layout_constraintBottom_toBottomOf="@id/qr_generate_Ibutton"
@@ -85,7 +86,7 @@
         app:layout_constraintStart_toStartOf="@id/special_meal_back"
         app:layout_constraintTop_toTopOf="@id/special_meal_back"
         app:layout_constraintBottom_toBottomOf="@id/special_meal_back"
-        tools:srcCompat="@drawable/group_47" />
+        app:srcCompat="@drawable/group_47" />
 
     <TextView
         android:id="@+id/special_menu_text"

@@ -42,19 +42,19 @@ class MainActivity9 : AppCompatActivity() {
                 startActivity(it)
             }
         }
-        val sm: TextView =findViewById(R.id.textView34)
+        val sm: TextView =findViewById(R.id.special_meal_back)
         sm.setOnClickListener {
             Intent(this,details_of_sm::class.java).also{
                 startActivity(it)
             }
         }
-        val mc: TextView =findViewById(R.id.textView37)
+        val mc: TextView =findViewById(R.id.menu_change_back)
         mc.setOnClickListener {
             Intent(this,details_of_mc::class.java).also{
                 startActivity(it)
             }
         }
-        val gm: TextView =findViewById(R.id.textView40)
+        val gm: TextView =findViewById(R.id.general_mail_back)
         gm.setOnClickListener {
             Intent(this,details_of_gm::class.java).also{
                 startActivity(it)

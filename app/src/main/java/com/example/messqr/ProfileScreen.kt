@@ -30,7 +30,7 @@ class ProfileScreen : AppCompatActivity() {
         checkUser()
 
         //handle click logout
-        binding.button8.setOnClickListener {
+        binding.logOutButton.setOnClickListener {
             firebaseAuth.signOut()
             checkUser()
         }
@@ -76,7 +76,7 @@ class ProfileScreen : AppCompatActivity() {
             //user not null logged in get user info
             val email=firebaseUser.email
             //set to text view
-            binding.textView38.text=email
+            binding.emailText.text=email
         }
         else
         {

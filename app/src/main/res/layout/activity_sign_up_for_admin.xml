@@ -27,7 +27,7 @@
         android:layout_marginTop="50dp"
         android:background="@color/dullCyan"
         android:fontFamily="sans-serif"
-        android:text="LOGIN"
+        android:text="@string/sign_up"
         android:textColor="@color/Cyan"
         android:textSize="35sp"
         android:textStyle="bold"

@@ -46,7 +46,7 @@ class MainActivity4 : AppCompatActivity() {
         }
 
         //handle click special meal button
-        val button4:Button=findViewById(R.id.button4)
+        val button4:Button=findViewById(R.id.special_meal_button)
         button4.setOnClickListener {
             Intent(this,MainActivity8::class.java).also{
                 startActivity(it)
@@ -98,8 +98,8 @@ class MainActivity4 : AppCompatActivity() {
         }
 
         //handle click scan button
-        val button6: Button = findViewById(R.id.button6)
-        val available:TextView=findViewById(R.id.textView7)
+        val scanButton: Button = findViewById(R.id.scan_button)
+        val available:TextView=findViewById(R.id.available_text)
         if (hours in 8..10 || hours in 12..14 || hours in 20..22) {
             if(hours in 8..10 ){
                 available.text="Breakfast Available"
@@ -113,13 +113,13 @@ class MainActivity4 : AppCompatActivity() {
 
 
 
-            button6.setOnClickListener {
+            scanButton.setOnClickListener {
                 Intent(this, QR_Scanner::class.java).also {
                     startActivity(it)
                 }
             }
         } else {
-            button6.setOnClickListener {
+            scanButton.setOnClickListener {
                 tick.setImageResource(R.drawable.ic_qrcode_default_200)
                 scanResult.text = "Scan the QR"
                 Toast.makeText(this, "Please scan at the correct meal timing", Toast.LENGTH_SHORT)

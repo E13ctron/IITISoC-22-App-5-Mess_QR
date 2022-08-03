@@ -9,29 +9,29 @@
 
     <TextView
         android:id="@+id/white_back"
-        android:layout_width="413dp"
-        android:layout_height="604dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/white_textview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.874"/>
+        app:layout_constraintTop_toBottomOf="@id/announceText" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/announceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/dullCyan"
+        android:fontFamily="sans-serif"
         android:text="@string/announcement"
-        android:textAlignment="center"
         android:textColor="@color/Cyan"
-        android:textSize="34sp"
+        android:textSize="35sp"
         android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="30dp" />
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/nav_bar_back"
@@ -112,50 +112,60 @@
         app:layout_constraintTop_toTopOf="@id/history_Ibutton" />
 
     <TextView
-        android:id="@+id/textView49"
+        android:id="@+id/heading_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="HEADING"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="142dp" />
+        android:hint="@string/heading"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/white_back"/>
 
     <TextView
-        android:id="@+id/textView50"
+        android:id="@+id/date_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="DATE"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="142dp" />
+        android:hint="@string/date"
+        android:textSize="20sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/white_back"/>
 
     <TextView
-        android:id="@+id/textView51"
-        android:layout_width="344dp"
-        android:layout_height="246dp"
-        android:hint="Details"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="215dp" />
+        android:id="@+id/details_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/details"
+        android:textSize="20sp"
+        android:padding="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading_text"/>
 
     <TextView
-        android:id="@+id/textView52"
-        android:layout_width="167dp"
-        android:layout_height="38dp"
-        android:hint="prise"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="517dp" />
-
-    <TextView
-        android:id="@+id/textView53"
+        android:id="@+id/price_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PRICE-   ₹"
-        android:textSize="25dp"
+        android:text="@string/price_r"
+        android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="517dp" />
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nav_bar_back"/>
+
+    <TextView
+        android:id="@+id/price_text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/price"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/price_text"
+        app:layout_constraintBottom_toBottomOf="@id/price_text"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

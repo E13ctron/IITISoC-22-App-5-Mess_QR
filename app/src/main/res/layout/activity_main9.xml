@@ -129,7 +129,7 @@
         app:layout_constraintStart_toStartOf="@id/special_meal_back"
         app:layout_constraintTop_toTopOf="@id/special_meal_back"
         app:layout_constraintBottom_toBottomOf="@id/special_meal_back"
-        tools:srcCompat="@drawable/group_47" />
+        app:srcCompat="@drawable/group_47" />
 
     <TextView
         android:id="@+id/special_menu_text"

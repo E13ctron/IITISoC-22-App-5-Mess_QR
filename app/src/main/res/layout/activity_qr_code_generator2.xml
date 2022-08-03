@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/nav_bar_back"
         android:layout_width="0dp"
         android:layout_height="71dp"
         android:background="@drawable/nav_design"
@@ -17,38 +17,37 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageView7"
-        android:layout_width="57dp"
-        android:layout_height="44dp"
-        android:background="@color/Cyan"
+        android:id="@+id/generate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_back"
+        android:padding="8dp"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/nav_bar_back"
         app:srcCompat="@drawable/ic_baseline_qr_code_24" />
+
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/announce_Ibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/Cyan"
-        app:layout_constraintTop_toTopOf="@id/imageView7"
-        app:layout_constraintBottom_toBottomOf="@id/imageView7"
+        app:layout_constraintTop_toTopOf="@id/generate_button"
+        app:layout_constraintBottom_toBottomOf="@id/generate_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/imageView7"
+        app:layout_constraintEnd_toEndOf="@id/generate_button"
         app:srcCompat="@drawable/ic_baseline_mail_outline_24"
-        tools:ignore="ImageContrastCheck"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="671dp" />
+        android:importantForAccessibility="no" />
     <TextView
-        android:id="@+id/textView30"
+        android:id="@+id/qr_generator_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-
         android:background="@color/dullCyan"
         android:fontFamily="sans-serif"
-        android:text="QR GENERATOR"
+        android:text="@string/qr_generator"
         android:textColor="@color/Cyan"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -58,7 +57,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/white_back"
         android:elevation="@dimen/font_10"
         android:layout_width="326dp"
         android:layout_height="321dp"
@@ -66,17 +65,18 @@
         android:background="@drawable/white_textview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView30" />
+        app:layout_constraintTop_toTopOf="@+id/qr_generator_text" />
 
     <ImageView
         android:id="@+id/ivQRCode"
         android:elevation="20dp"
         android:layout_width="310dp"
         android:layout_height="290dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView31"
-        app:layout_constraintEnd_toEndOf="@+id/textView31"
-        app:layout_constraintStart_toStartOf="@+id/textView31"
-        app:layout_constraintTop_toTopOf="@+id/textView31"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/white_back"
+        app:layout_constraintEnd_toEndOf="@+id/white_back"
+        app:layout_constraintStart_toStartOf="@+id/white_back"
+        app:layout_constraintTop_toTopOf="@+id/white_back"
         app:srcCompat="@drawable/ic_baseline_qr_code_scanner_24" />
 
     <EditText
@@ -85,14 +85,15 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="196dp"
         android:ems="10"
-        android:hint="enter meal"
+        android:hint="@string/enter_meal"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView31"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/white_back"
+        app:layout_constraintVertical_bias="1.0"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btnGenerateQRcode"
@@ -101,8 +102,8 @@
         android:textSize="19sp"
         android:background="@drawable/shadow"
         android:backgroundTint="@color/Cyan"
-        android:text="GENERATE"
-        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        android:text="@string/generate"
+        app:layout_constraintBottom_toTopOf="@id/nav_bar_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etData" />
