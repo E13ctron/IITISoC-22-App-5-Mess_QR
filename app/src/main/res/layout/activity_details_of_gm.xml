@@ -116,7 +116,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/heading"
-        android:textSize="20sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,19 +127,19 @@
         android:id="@+id/date_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
         android:hint="@string/date"
         android:textSize="20sp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/white_back"/>
+        app:layout_constraintTop_toTopOf="@id/white_back" />
 
     <TextView
         android:id="@+id/details_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/details"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:padding="40dp"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -161,10 +162,24 @@
         android:id="@+id/price_text_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:hint="@string/price"
         android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@id/price_text"
-        app:layout_constraintBottom_toBottomOf="@id/price_text"/>
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/price_text"
+        app:layout_constraintStart_toEndOf="@id/price_text" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/price_text_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/white_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734"
+        android:onClick="fetchData"/>
 
 
 

@@ -21,6 +21,7 @@ class sm_announce : AppCompatActivity() {
 
     private var sm_docref:DocumentReference=FirebaseFirestore.getInstance().document("announcement/sm_announcement")
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sm_announce)
