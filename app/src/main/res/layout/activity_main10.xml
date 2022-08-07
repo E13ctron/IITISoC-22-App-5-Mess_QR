@@ -177,6 +177,7 @@
                 android:paddingHorizontal="8dp"
                 
 
+
                 android:textColor="@color/black"
                 android:textSize="11dp"
                 android:textStyle="bold">
@@ -192,6 +193,7 @@
                 android:layout_weight="4"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="2dp"
+
 
                 android:textColor="@color/black"
                 android:textSize="11dp"
@@ -2295,5 +2297,42 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/history_Ibutton"
         app:layout_constraintTop_toTopOf="@id/history_Ibutton" />
+
+    <EditText
+        android:id="@+id/enterDataText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/white_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/savingData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/white_back"
+        app:layout_constraintEnd_toStartOf="@+id/textView23"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <Button
+        android:id="@+id/initializeDataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/white_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

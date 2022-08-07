@@ -50,7 +50,7 @@ class sm_announce : AppCompatActivity() {
         dataToSave[price_sm]=priceText
 
         sm_docref.set(dataToSave).addOnSuccessListener {
-            Log.d(TAG, "savData: document is updated")
+            Log.d(TAG, "saveData: document is updated")
         }
             .addOnFailureListener{e->
                 Log.e(TAG, e.toString() )
