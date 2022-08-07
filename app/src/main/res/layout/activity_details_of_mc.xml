@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/white_back"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="414dp"
+        android:layout_height="607dp"
         android:background="@drawable/white_textview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/heading"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
