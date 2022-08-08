@@ -2298,17 +2298,7 @@
         app:layout_constraintStart_toEndOf="@id/history_Ibutton"
         app:layout_constraintTop_toTopOf="@id/history_Ibutton" />
 
-    <EditText
-        android:id="@+id/enterDataText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/white_back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
 
     <Button
         android:id="@+id/savingData"

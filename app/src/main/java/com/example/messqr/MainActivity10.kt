@@ -39,7 +39,7 @@ class MainActivity10 : AppCompatActivity() {
 
         var mdocref:DocumentReference=FirebaseFirestore.getInstance().document("History/${email}")
 
-        val enterTextData:EditText=findViewById(R.id.enterDataText)
+
         val enterBtn:Button=findViewById(R.id.savingData)
 
 
@@ -132,10 +132,13 @@ class MainActivity10 : AppCompatActivity() {
                 val B3_string:String?=it.getString("B3")
                 val B4_string:String?=it.getString("B4")
 
+
                 val B1_textView:TextView=findViewById(R.id.B1)
                 val B2_textView:TextView=findViewById(R.id.B2)
                 val B3_textView:TextView=findViewById(R.id.B3)
                 val B4_textView:TextView=findViewById(R.id.B4)
+
+
                 B1_textView.text=B1_string
                 B2_textView.text=B2_string
                 B3_textView.text=B3_string
