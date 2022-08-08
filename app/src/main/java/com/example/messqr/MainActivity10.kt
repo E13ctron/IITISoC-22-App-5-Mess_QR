@@ -1,6 +1,7 @@
 package com.example.messqr
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -28,6 +29,10 @@ class MainActivity10 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main10)
+        val B1_textView:TextView=findViewById(R.id.B1)
+        val B2_textView:TextView=findViewById(R.id.B2)
+        val B3_textView:TextView=findViewById(R.id.B3)
+        val B4_textView:TextView=findViewById(R.id.B4)
         //getting email variable
         firebaseAuth=FirebaseAuth.getInstance()
 
@@ -47,6 +52,16 @@ class MainActivity10 : AppCompatActivity() {
             val string:String= scanid
                     updateData(mdocref)
                     fetchData(mdocref)
+            if(B1_textView.text.toString()=="0"){
+                B1_textView.setBackgroundColor(Color.parseColor("#E8E8E8"))
+                B1_textView.setTextColor(Color.parseColor("#E8E8E8"))
+
+            }
+            else if(B1_textView.text.toString()=="1"){
+                B1_textView.setBackgroundColor(Color.parseColor("#BDFFF9"))
+                B1_textView.setTextColor(Color.parseColor("#BDFFF9"))
+
+            }
         }
 
         val resetBtn:Button=findViewById(R.id.initializeDataBtn)
@@ -85,6 +100,9 @@ class MainActivity10 : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+
+
     }
 
     private fun resetData(mdocref: DocumentReference) {
