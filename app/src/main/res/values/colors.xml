@@ -11,6 +11,8 @@
     <color name="Cyan"> #1ADCD8</color>
     <color name="darkBlue"> #3F3D56</color>
     <color name="cyan_A200">#18ffff</color>
+    <color name="before_meal">#E8E8E8</color>
+    <color name="history">#D2D2D2</color>
 
 </resources>
 
