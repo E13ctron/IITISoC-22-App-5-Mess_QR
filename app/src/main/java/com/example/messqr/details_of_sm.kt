@@ -74,7 +74,7 @@ class details_of_sm : AppCompatActivity() {
     }
 
 
-    fun fetchData()
+    private fun fetchData()
     {
         smdocref.get().addOnSuccessListener {
             if (it.exists()){

@@ -63,5 +63,5 @@ class MainActivity9 : AppCompatActivity() {
         }
     }
 
-    fun fetchData(view: View) {}
+
 }

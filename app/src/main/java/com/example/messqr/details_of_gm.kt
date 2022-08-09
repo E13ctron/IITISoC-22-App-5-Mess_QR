@@ -71,7 +71,7 @@ class details_of_gm : AppCompatActivity() {
         }
 
     }
-    fun fetchData()
+    private fun fetchData()
     {
         gmdocref.get().addOnSuccessListener {
             if (it.exists()){

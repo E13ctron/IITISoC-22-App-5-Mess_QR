@@ -72,7 +72,7 @@ class details_of_mc : AppCompatActivity() {
         }
     }
 
-    fun fetchData()
+    private fun fetchData()
     {
         mcdocref.get().addOnSuccessListener {
             if (it.exists()){

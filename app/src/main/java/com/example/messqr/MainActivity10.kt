@@ -137,7 +137,7 @@ class MainActivity10 : AppCompatActivity() {
 
         //DOCUMENT REFERENCING
 
-        var mdocref:DocumentReference=FirebaseFirestore.getInstance().document("History/${email}")
+        val mdocref:DocumentReference=FirebaseFirestore.getInstance().document("History/${email}")
 
 
         // updating and fetching data
@@ -985,7 +985,7 @@ class MainActivity10 : AppCompatActivity() {
             D31_textView.setBackgroundColor(Color.parseColor("#BDFFF9"))
             D31_textView.setTextColor(Color.parseColor("#BDFFF9"))
         }
-        //reset button
+       // reset button
         val resetBtn:Button=findViewById(R.id.initializeDataBtn)
         resetBtn.setOnClickListener {
             resetData(mdocref)
@@ -1163,7 +1163,8 @@ class MainActivity10 : AppCompatActivity() {
             }
     }
 
-    fun updateData(mdocref: DocumentReference) {
+    private fun updateData(mdocref: DocumentReference) {
+        if (scanid==""){return}
 
 //       val enterTextData:EditText=findViewById(R.id.enterDataText)
        val string:String= scanid
@@ -1173,14 +1174,14 @@ class MainActivity10 : AppCompatActivity() {
        dataToSave[string]=dataText
 
        mdocref.update(dataToSave as Map<String, Any>).addOnSuccessListener {
-           Log.d(TAG, "saveData: document added")
+           Log.d(TAG, "updateData: data is updated")
        }
            .addOnFailureListener{e->
                Log.e(TAG, e.toString() )
            }
     }
 
-    fun fetchData(mdocref: DocumentReference){
+    private fun fetchData(mdocref: DocumentReference){
 
         mdocref.get().addOnSuccessListener {
 
