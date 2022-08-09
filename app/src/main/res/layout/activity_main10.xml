@@ -195,11 +195,11 @@
                 android:id="@+id/L1"
                 android:background="@drawable/border"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="4"
                 android:paddingHorizontal="8dp"
-                android:paddingVertical="2dp"
+
 
 
                 android:textColor="@color/black"
