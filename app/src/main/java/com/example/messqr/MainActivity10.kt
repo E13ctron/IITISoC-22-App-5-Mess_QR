@@ -1025,6 +1025,35 @@ class MainActivity10 : AppCompatActivity() {
 
     }
 
+    private fun checkCondition() {
+        val B1_textView:TextView=findViewById(R.id.B1)
+        val B2_textView:TextView=findViewById(R.id.B2)
+        val B3_textView:TextView=findViewById(R.id.B3)
+        val B4_textView:TextView=findViewById(R.id.B4)
+
+        if(B1_textView.text.toString()=="0"){
+                B1_textView.setBackgroundColor(Color.parseColor("#E8E8E8"))
+                B1_textView.setTextColor(Color.parseColor("#E8E8E8"))
+
+            }
+            else if(B1_textView.text.toString()=="1"){
+                B1_textView.setBackgroundColor(Color.parseColor("#BDFFF9"))
+                B1_textView.setTextColor(Color.parseColor("#BDFFF9"))
+
+            }
+            if(B2_textView.text.toString()=="0"){
+                B2_textView.setBackgroundColor(Color.parseColor("#E8E8E8"))
+                B2_textView.setTextColor(Color.parseColor("#E8E8E8"))
+
+            }
+            else if(B2_textView.text.toString()=="1"){
+                B2_textView.setBackgroundColor(Color.parseColor("#BDFFF9"))
+                B2_textView.setTextColor(Color.parseColor("#BDFFF9"))
+
+            }
+
+    }
+
     private fun resetData(mdocref: DocumentReference) {
         val dataToSave= hashMapOf<String, String>()
         dataToSave["B1"]="0"
@@ -1133,7 +1162,6 @@ class MainActivity10 : AppCompatActivity() {
     }
 
     fun updateData(mdocref: DocumentReference) {
-        if(scanid==""){return }
 
 //       val enterTextData:EditText=findViewById(R.id.enterDataText)
        val string:String= scanid
