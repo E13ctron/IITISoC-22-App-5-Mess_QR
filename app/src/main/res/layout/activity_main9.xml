@@ -157,7 +157,7 @@
         android:id="@+id/desc_special_menu_announce"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:text="@string/desc_special_menu_user"
+        android:text="Details of special meal which will be served today"
         android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@id/special_menu_text"
         app:layout_constraintStart_toStartOf="@id/special_menu_text"/>
@@ -196,7 +196,7 @@
         android:id="@+id/desc_menu_change_announce"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:text="@string/desc_menu_change_user"
+        android:text="Details of change in meal which will be served today"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@id/menu_change_text"
         app:layout_constraintTop_toBottomOf="@id/menu_change_text"/>

@@ -1499,7 +1499,7 @@
                 android:paddingHorizontal="17dp"
                 android:textColor="@color/black"
 
-                android:textSize="15dp"
+                android:textSize="11dp"
                 android:textStyle="bold">
 
 

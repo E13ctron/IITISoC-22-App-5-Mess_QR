@@ -21,7 +21,7 @@ class MainActivity4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
-
+        //
 
         //restrict the screenshot on this specific page
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
@@ -106,7 +106,7 @@ class MainActivity4 : AppCompatActivity() {
                 } else if (hours in 12..14) {
                     available.text = "Lunch Available"
                 }
-                if (hours in 17..22) {
+                else if (hours in 17..22) {
                     available.text = "Dinner Available"
                 }
                 scanButton.setOnClickListener {
