@@ -195,16 +195,25 @@
         app:layout_constraintTop_toBottomOf="@id/tick_icon"
         tools:text="Please Scan" />
 
-    <Chronometer
-        android:id="@+id/stopwatch"
-        android:elevation="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/scan_button"
-        app:layout_constraintEnd_toEndOf="@id/scan_result"
-        app:layout_constraintStart_toStartOf="@id/scan_result"
-        app:layout_constraintTop_toBottomOf="@id/scan_result" />
+<!--    <Chronometer-->
+<!--        android:id="@+id/stopwatch"-->
+<!--        android:elevation="15dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/scan_button"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/scan_result"-->
+<!--        app:layout_constraintStart_toStartOf="@id/scan_result"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/scan_result" />-->
 
+<!--    <TextView-->
+<!--        android:id="@+id/timeTV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/place_holder_time"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"/>-->
 
 
 

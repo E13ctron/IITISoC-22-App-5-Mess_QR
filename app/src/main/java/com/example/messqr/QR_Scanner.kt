@@ -32,7 +32,6 @@ class QR_Scanner: AppCompatActivity() {
             runOnUiThread {
                 //Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()
                 scanid=it.text.toString()
-
                 Intent(this,MainActivity4::class.java).also {
                     startActivity(it)
                 }

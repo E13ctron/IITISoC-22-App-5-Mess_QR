@@ -30,6 +30,8 @@ class MainActivity10 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main10)
+
+
         val B1_textView:TextView=findViewById(R.id.B1)
         val B2_textView:TextView=findViewById(R.id.B2)
         val B3_textView:TextView=findViewById(R.id.B3)

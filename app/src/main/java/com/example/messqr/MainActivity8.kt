@@ -14,13 +14,11 @@ class MainActivity8 : AppCompatActivity() {
         var hours: Int = currentTime.hours
         var scanResult: TextView = findViewById(R.id.scan_result)
         var tick: ImageView = findViewById(R.id.tick_icon)
-        var stopWatch: Chronometer = findViewById(R.id.stopwatch)
         if(scanid!=""){
             tick.setImageResource(R.drawable.ic_green_circle_200)
             scanResult.text = "The QR Code was Scanned Successfully : "
             scanResult.textSize = resources.getDimension(R.dimen.font_10)
-            stopWatch.start()
-        }
+       }
         else {
             tick.setImageResource(R.drawable.ic_qrcode_default_200)
             scanResult.text = "Please Scan"

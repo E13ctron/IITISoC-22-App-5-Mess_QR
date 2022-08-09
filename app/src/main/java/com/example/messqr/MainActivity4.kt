@@ -15,10 +15,12 @@ import java.util.jar.Manifest
 
 class MainActivity4 : AppCompatActivity() {
 
+    var a=0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
+
 
 
         //restrict the screenshot on this specific page
@@ -30,29 +32,27 @@ class MainActivity4 : AppCompatActivity() {
         }
 
         val currentTime: Date = Calendar.getInstance().time
-        val hours: Int= currentTime.hours
-        val scanResult:TextView=findViewById(R.id.scan_result)
-        val tick:ImageView=findViewById(R.id.tick_icon)
-        val stopWatch: Chronometer =findViewById(R.id.stopwatch)
-        if(scanid!=""){
+        val hours: Int = currentTime.hours
+        val scanResult: TextView = findViewById(R.id.scan_result)
+        val tick: ImageView = findViewById(R.id.tick_icon)
+        if (scanid != "") {
             tick.setImageResource(R.drawable.ic_green_circle_200)
             scanResult.text = "The QR Code was Scanned Successfully : "
             scanResult.textSize = resources.getDimension(R.dimen.font_10)
-            stopWatch.start()
-        }
-        else {
+            a=1
+        } else {
             tick.setImageResource(R.drawable.ic_qrcode_default_200)
             scanResult.text = "Please Scan"
         }
 
         //handle click special meal button
-        val button4:Button=findViewById(R.id.special_meal_button)
+        val button4: Button = findViewById(R.id.special_meal_button)
         button4.setOnClickListener {
-            Intent(this,MainActivity8::class.java).also{
+            Intent(this, MainActivity8::class.java).also {
                 startActivity(it)
             }
         }
-//        if(hours in 20..22 ) {
+//       if(hours in 20..22 ) {
 //            button4.setOnClickListener {
 //                Intent(this,MainActivity8::class.java).also{
 //                    startActivity(it)
@@ -99,37 +99,42 @@ class MainActivity4 : AppCompatActivity() {
 
         //handle click scan button
         val scanButton: Button = findViewById(R.id.scan_button)
-        val available:TextView=findViewById(R.id.available_text)
-        if (hours in 0..10 || hours in 12..14 || hours in 17..24) {
-            if(hours in 0..10 ){
-                available.text="Breakfast Available"
-            }
-            else if(hours in 12..14 ){
-                available.text="Lunch Available"
-            }
-            if(hours in 17..24){
-                available.text="Dinner Available"
-            }
-
-
-
-            scanButton.setOnClickListener {
-                Intent(this, QR_Scanner::class.java).also {
-                    startActivity(it)
+        val available: TextView = findViewById(R.id.available_text)
+        if (hours in 8..10 || hours in 12..14 || hours in 17..22) {
+                if (hours in 8..10) {
+                    available.text = "Breakfast Available"
+                } else if (hours in 12..14) {
+                    available.text = "Lunch Available"
                 }
-            }
+                if (hours in 17..22) {
+                    available.text = "Dinner Available"
+                }
+                scanButton.setOnClickListener {
+                    if(scanid=="") {
+                        Intent(this, QR_Scanner::class.java).also {
+                    startActivity(it)
+                    }
+                    }
+                    else{
+                        Toast.makeText(this, "You have already Scanned", Toast.LENGTH_SHORT)
+                            .show()
+                    }
+                }
         } else {
             scanButton.setOnClickListener {
                 tick.setImageResource(R.drawable.ic_qrcode_default_200)
                 scanResult.text = "Scan the QR"
+                a=0
                 Toast.makeText(this, "Please scan at the correct meal timing", Toast.LENGTH_SHORT)
                     .show()
             }
         }
     }
 
-
 }
+
+
+
 
 //this is only for reference that how it will work
 //        val button6:Button=findViewById(R.id.button6)
