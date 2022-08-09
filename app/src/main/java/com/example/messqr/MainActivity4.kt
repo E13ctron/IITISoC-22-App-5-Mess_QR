@@ -15,13 +15,12 @@ import java.util.jar.Manifest
 
 class MainActivity4 : AppCompatActivity() {
 
-    var a=0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
-        //
+
 
         //restrict the screenshot on this specific page
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {

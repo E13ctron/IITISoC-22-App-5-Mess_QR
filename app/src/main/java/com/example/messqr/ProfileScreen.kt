@@ -3,6 +3,7 @@ package com.example.messqr
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.ActionBar
 import com.example.messqr.databinding.ActivityProfileScreenBinding
@@ -33,6 +34,14 @@ class ProfileScreen : AppCompatActivity() {
         binding.logOutButton.setOnClickListener {
             firebaseAuth.signOut()
             checkUser()
+        }
+
+        //handle edit button
+        val editButton:Button=findViewById(R.id.edit_button)
+        editButton.setOnClickListener{
+            Intent(this,update_profile::class.java).also{
+                startActivity(it)
+            }
         }
 
         //handle click announcement Image button

@@ -69,4 +69,13 @@
     <string name="reset">Reset</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="update_your_profile">UPDATE YOUR PROFILE</string>
+    <string name="name">Name</string>
+    <string name="name_">Name:</string>
+    <string name="hello__">Hello !!!</string>
+    <string name="email_address_">Email Address:</string>
+    <string name="age_">Age:</string>
+    <string name="department_">Department:</string>
+    <string name="mobile_number_">Mobile number:</string>
+    <string name="edit">EDIT</string>
 </resources>
