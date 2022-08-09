@@ -985,11 +985,7 @@ class MainActivity10 : AppCompatActivity() {
             D31_textView.setBackgroundColor(Color.parseColor("#BDFFF9"))
             D31_textView.setTextColor(Color.parseColor("#BDFFF9"))
         }
-       // reset button
-        val resetBtn:Button=findViewById(R.id.initializeDataBtn)
-        resetBtn.setOnClickListener {
-            resetData(mdocref)
-        }
+
 
         //handle click announcement Image button
         val announceImageButtonButton: ImageButton =  findViewById(R.id.announce_Ibutton)
@@ -1056,112 +1052,7 @@ class MainActivity10 : AppCompatActivity() {
 
     }
 
-    private fun resetData(mdocref: DocumentReference) {
-        val dataToSave= hashMapOf<String, String>()
-        dataToSave["B1"]="0"
-        dataToSave["B2"]="0"
-        dataToSave["B3"]="0"
-        dataToSave["B4"]="0"
-        dataToSave["B5"]="0"
-        dataToSave["B6"]="0"
-        dataToSave["B7"]="0"
-        dataToSave["B8"]="0"
-        dataToSave["B9"]="0"
-        dataToSave["B10"]="0"
-        dataToSave["B11"]="0"
-        dataToSave["B12"]="0"
-        dataToSave["B13"]="0"
-        dataToSave["B14"]="0"
-        dataToSave["B15"]="0"
-        dataToSave["B16"]="0"
-        dataToSave["B17"]="0"
-        dataToSave["B18"]="0"
-        dataToSave["B19"]="0"
-        dataToSave["B20"]="0"
-        dataToSave["B21"]="0"
-        dataToSave["B22"]="0"
-        dataToSave["B23"]="0"
-        dataToSave["B24"]="0"
-        dataToSave["B25"]="0"
-        dataToSave["B26"]="0"
-        dataToSave["B27"]="0"
-        dataToSave["B28"]="0"
-        dataToSave["B29"]="0"
-        dataToSave["B30"]="0"
-        dataToSave["B31"]="0"
 
-        dataToSave["L1"]="0"
-        dataToSave["L2"]="0"
-        dataToSave["L3"]="0"
-        dataToSave["L4"]="0"
-        dataToSave["L5"]="0"
-        dataToSave["L6"]="0"
-        dataToSave["L7"]="0"
-        dataToSave["L8"]="0"
-        dataToSave["L9"]="0"
-        dataToSave["L10"]="0"
-        dataToSave["L11"]="0"
-        dataToSave["L12"]="0"
-        dataToSave["L13"]="0"
-        dataToSave["L14"]="0"
-        dataToSave["L15"]="0"
-        dataToSave["L16"]="0"
-        dataToSave["L17"]="0"
-        dataToSave["L18"]="0"
-        dataToSave["L19"]="0"
-        dataToSave["L20"]="0"
-        dataToSave["L21"]="0"
-        dataToSave["L22"]="0"
-        dataToSave["L23"]="0"
-        dataToSave["L24"]="0"
-        dataToSave["L25"]="0"
-        dataToSave["L26"]="0"
-        dataToSave["L27"]="0"
-        dataToSave["L28"]="0"
-        dataToSave["L29"]="0"
-        dataToSave["L30"]="0"
-        dataToSave["L31"]="0"
-
-        dataToSave["D1"]="0"
-        dataToSave["D2"]="0"
-        dataToSave["D3"]="0"
-        dataToSave["D4"]="0"
-        dataToSave["D5"]="0"
-        dataToSave["D6"]="0"
-        dataToSave["D7"]="0"
-        dataToSave["D8"]="0"
-        dataToSave["D9"]="0"
-        dataToSave["D10"]="0"
-        dataToSave["D11"]="0"
-        dataToSave["D12"]="0"
-        dataToSave["D13"]="0"
-        dataToSave["D14"]="0"
-        dataToSave["D15"]="0"
-        dataToSave["D16"]="0"
-        dataToSave["D17"]="0"
-        dataToSave["D18"]="0"
-        dataToSave["D19"]="0"
-        dataToSave["D20"]="0"
-        dataToSave["D21"]="0"
-        dataToSave["D22"]="0"
-        dataToSave["D23"]="0"
-        dataToSave["D24"]="0"
-        dataToSave["D25"]="0"
-        dataToSave["D26"]="0"
-        dataToSave["D27"]="0"
-        dataToSave["D28"]="0"
-        dataToSave["D29"]="0"
-        dataToSave["D30"]="0"
-        dataToSave["D31"]="0"
-
-        mdocref.set(dataToSave).addOnSuccessListener {
-            Log.d(TAG, "resetData: ")
-
-        }
-            .addOnFailureListener { e->
-                Log.e(TAG, e.toString() )
-            }
-    }
 
     private fun updateData(mdocref: DocumentReference) {
         if (scanid==""){return}
