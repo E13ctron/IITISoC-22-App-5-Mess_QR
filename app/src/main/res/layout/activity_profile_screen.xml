@@ -24,6 +24,7 @@
         android:id="@+id/nav_bar_back"
         android:layout_width="match_parent"
         android:layout_height="71dp"
+        android:elevation="15dp"
         android:background="@drawable/nav_design"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,10 +42,22 @@
     <!--        app:layout_constraintVertical_bias="0.057"-->
     <!--        app:srcCompat="@drawable/whatsapp_image_2022_07_19_at_3_38_04_pm" />-->
 
+    <TextView
+        android:id="@+id/white_back"
+        android:layout_width="402dp"
+        android:layout_height="603dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/white_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_text" />
+
     <ImageButton
         android:id="@+id/announce_Ibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elevation="15dp"
         android:layout_marginStart="8dp"
         android:background="@color/Cyan"
         android:importantForAccessibility="no"
@@ -58,6 +71,7 @@
     <ImageButton
         android:id="@+id/payment_Ibutton"
         android:layout_width="wrap_content"
+        android:elevation="15dp"
         android:layout_height="wrap_content"
         android:background="@color/Cyan"
         android:importantForAccessibility="no"
@@ -73,6 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/Cyan"
+        android:elevation="15dp"
         android:importantForAccessibility="no"
         android:minWidth="48dp"
         app:layout_constraintBottom_toBottomOf="@id/payment_Ibutton"
@@ -86,6 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/Cyan"
+        android:elevation="15dp"
         android:importantForAccessibility="no"
         android:minWidth="48dp"
         android:padding="8dp"
@@ -99,6 +115,7 @@
         android:id="@+id/profile_Ibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elevation="15dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/round_back"
         android:importantForAccessibility="no"
@@ -109,30 +126,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/history_Ibutton"
         app:layout_constraintTop_toTopOf="@id/history_Ibutton" />
+
+
     <TextView
         android:id="@+id/logged_in_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/you_are_logged_in_as"
-        android:textSize="24sp"
-        android:layout_marginTop="40dp"
+        android:layout_width="126dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:text="Hello !!!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_text" />
+        app:layout_constraintTop_toTopOf="@+id/white_back" />
+
 
     <TextView
         android:id="@+id/email_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:textColor="@color/teal_700"
-        android:textSize="34sp"
-        android:layout_marginTop="20dp"
-        android:padding="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logged_in_text"/>
+        android:layout_width="209dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
 
+        android:padding="2dp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <Button
         android:id="@+id/log_out_button"
@@ -143,5 +168,139 @@
         app:layout_constraintBottom_toTopOf="@id/nav_bar_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textColor="@color/Cyan"
+        android:textSize="21dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logged_in_text" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="139dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="74dp"
+
+        android:layout_marginEnd="14dp"
+        android:text="Email Address: "
+
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/email_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="139dp"
+        android:layout_height="34dp"
+
+        android:layout_marginTop="16dp"
+
+        android:text="Age: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="139dp"
+        android:layout_height="34dp"
+
+        android:layout_marginTop="16dp"
+
+        android:text="Department: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="209dp"
+        android:layout_height="36dp"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:padding="2dp"
+        android:text="cse"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="209dp"
+        android:layout_height="36dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:padding="2dp"
+        android:text="age"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_text" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="146dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="48dp"
+
+        android:text="Moblie number: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="209dp"
+        android:layout_height="36dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:padding="2dp"
+        android:text="cse"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/white_back"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="EDIT"
+        app:layout_constraintBottom_toTopOf="@+id/log_out_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
