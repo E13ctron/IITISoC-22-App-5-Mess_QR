@@ -3,13 +3,26 @@ package com.example.messqr
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.ActionBar
 import com.example.messqr.databinding.ActivityProfileScreenBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.FirebaseFirestore
 
 class ProfileScreen : AppCompatActivity() {
+
+    companion object{
+        private const val TAG = "update_profile"
+        private const val name="name"
+        private const val age="age"
+        private const val department="department"
+        private const val mobile_no="mobile_no"
+
+    }
 
     //view binding
     private lateinit var binding: ActivityProfileScreenBinding
@@ -28,7 +41,14 @@ class ProfileScreen : AppCompatActivity() {
 
         //init firebase auth
         firebaseAuth=FirebaseAuth.getInstance()
+        val firebaseUser=firebaseAuth.currentUser
+        val email= firebaseUser?.email
         checkUser()
+        //document referencing
+        val mdocref: DocumentReference = FirebaseFirestore.getInstance().document("profile/${email}")
+
+        //fetching data
+        fetchData(mdocref)
 
         //handle click logout
         binding.logOutButton.setOnClickListener {
@@ -77,6 +97,34 @@ class ProfileScreen : AppCompatActivity() {
         }
 
     }
+
+    private fun fetchData(mdocref: DocumentReference) {
+        val usernameView:TextView=findViewById(R.id.username)
+        val ageView:TextView=findViewById(R.id.age_text)
+        val departmentView:TextView=findViewById(R.id.department_text)
+        val mobileView:TextView=findViewById(R.id.mobile_no_text)
+
+        mdocref.get().addOnSuccessListener {
+            if (it.exists())
+            {
+                val nameText:String?=it.getString(name)
+                val ageText:String?=it.getString(age)
+                val departmentText:String?=it.getString(department)
+                val mobileText:String?=it.getString(mobile_no)
+
+                usernameView.text= nameText
+                ageView.text=ageText
+                departmentView.text=departmentText
+                mobileView.text=mobileText
+            }
+        }
+            .addOnFailureListener { e->
+                Log.e(TAG, e.toString() )
+            }
+
+
+    }
+
     private fun checkUser() {
         //check whether user is logged in or not
         val firebaseUser=firebaseAuth.currentUser
