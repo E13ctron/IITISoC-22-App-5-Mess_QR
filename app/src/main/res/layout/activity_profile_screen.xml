@@ -148,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:padding="2dp"
-        android:text="@string/email"
+        android:text="                 "
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@id/email_heading"
@@ -159,11 +159,12 @@
         android:id="@+id/log_out_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
         android:text="@string/log_out"
-        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@id/nav_bar_back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/username"
@@ -221,7 +222,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="2dp"
-        android:text="cse"
+        android:text="                 "
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@id/age_text"
@@ -233,7 +234,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="2dp"
-        android:text="age"
+        android:text="                       "
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@id/email_text"
@@ -257,7 +258,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="2dp"
-        android:text="cse"
+        android:text="                       "
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintTop_toTopOf="@id/mobile_no_heading"
@@ -272,6 +273,7 @@
         android:text="@string/edit"
         app:layout_constraintBottom_toTopOf="@+id/log_out_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mobile_no_text"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -40,6 +40,19 @@
         tools:ignore="ImageContrastCheck" />
 
     <ImageButton
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_back"
+        android:elevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nav_bar_back"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toEndOf="@+id/qr_generate_Ibutton"
+        app:layout_constraintTop_toTopOf="@+id/nav_bar_back"
+        app:srcCompat="@drawable/ic_baseline_find_replace_24" />
+
+    <ImageButton
         android:id="@+id/announce_Ibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

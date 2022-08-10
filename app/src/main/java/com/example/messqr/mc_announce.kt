@@ -1,9 +1,11 @@
 package com.example.messqr
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
@@ -25,6 +27,7 @@ class mc_announce : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mc_announce)
     }
+
     fun saveData(view: View){
         val headingView: EditText =findViewById(R.id.heading_edit_text)
         val dateView: EditText =findViewById(R.id.date_edit_text)

@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MessQR">
         <activity
+            android:name=".admin_access"
+            android:exported="false" />
+        <activity
             android:name=".update_profile"
             android:exported="false" />
         <activity
