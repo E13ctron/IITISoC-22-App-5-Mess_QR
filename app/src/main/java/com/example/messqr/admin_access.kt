@@ -8,6 +8,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.appcompat.app.ActionBar
+import com.example.messqr.databinding.ActivityAdminAccessBinding
+import com.example.messqr.databinding.ActivityProfileScreenBinding
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -22,13 +26,33 @@ class admin_access : AppCompatActivity() {
 
     }
 
-
+    //view binding
+    private lateinit var binding: ActivityAdminAccessBinding
+    //action bar
+    private lateinit var actionBar: ActionBar
+    //firebase auth
+    private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_admin_access)
+        binding=ActivityAdminAccessBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
+        //configure action bar
+        actionBar=supportActionBar!!
+        actionBar.title="Profile"
 
+        //init firebase auth
+        firebaseAuth=FirebaseAuth.getInstance()
+        val firebaseUser=firebaseAuth.currentUser
+        val email= firebaseUser?.email
+        checkUser()
+
+        //handle click logout
+        binding.logoutbtn.setOnClickListener {
+            firebaseAuth.signOut()
+            checkUser()
+        }
 
         val fetch_btn:Button=findViewById(R.id.button4)
         fetch_btn.setOnClickListener {
@@ -81,5 +105,21 @@ class admin_access : AppCompatActivity() {
             .addOnFailureListener { e->
                 Log.e(TAG, e.toString() )
             }
+    }
+    private fun checkUser() {
+        //check whether user is logged in or not
+        val firebaseUser=firebaseAuth.currentUser
+        if (firebaseUser!=null)
+        {
+            //user not null logged in get user info
+            val email=firebaseUser.email
+
+        }
+        else
+        {
+            //user is null user not logged in go to login window
+            startActivity(Intent(this, MainActivity2::class.java))
+            finish()
+        }
     }
 }
