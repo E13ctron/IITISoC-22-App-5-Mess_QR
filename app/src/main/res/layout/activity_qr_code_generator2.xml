@@ -28,16 +28,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nav_bar_back"
         app:srcCompat="@drawable/ic_baseline_qr_code_24" />
+
     <ImageButton
-        android:id="@+id/imageView"
+        android:id="@+id/mail_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_back"
+        android:background="@color/Cyan"
         android:elevation="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/nav_bar_back"
-        app:layout_constraintStart_toEndOf="@+id/generate_button"
+        app:layout_constraintStart_toStartOf="@+id/generate_button"
         app:layout_constraintTop_toTopOf="@+id/nav_bar_back"
+        app:layout_constraintVertical_bias="0.59"
         app:srcCompat="@drawable/ic_baseline_find_replace_24" />
 
     <ImageButton

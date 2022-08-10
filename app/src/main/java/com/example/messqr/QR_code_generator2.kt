@@ -32,6 +32,14 @@ class QR_code_generator2 : AppCompatActivity() {
             }
         }
 
+        val mail_btn:ImageButton=findViewById(R.id.mail_btn)
+        mail_btn.setOnClickListener {
+            Intent(this, admin_access::class.java).also{
+                startActivity(it)
+            }
+
+        }
+
 
         btnGenerateQRcode.setOnClickListener {
             val data=etData.text.toString().trim()

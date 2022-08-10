@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 
 class Admin_Announcement : AppCompatActivity() {
@@ -11,6 +12,23 @@ class Admin_Announcement : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_announcement)
 
+        //handle  mail buttom
+        val mail_btn:ImageButton=findViewById(R.id.mail_btn)
+        mail_btn.setOnClickListener {
+            Intent(this, admin_access::class.java).also{
+                startActivity(it)
+            }
+
+        }
+
+        //handle qr code generator btn
+        val codeGeneratorbBtn:ImageButton=findViewById(R.id.qr_generate_Ibutton)
+        codeGeneratorbBtn.setOnClickListener {
+            Intent(this, QR_code_generator2::class.java).also{
+                startActivity(it)
+            }
+
+        }
 
         //meal change
         val mc: TextView =findViewById(R.id.menu_change_back)

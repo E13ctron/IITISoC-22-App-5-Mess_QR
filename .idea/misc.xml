@@ -40,17 +40,10 @@
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/drawable/shadow.xml" value="0.2385" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/drawable/white_textview.xml" value="0.2375" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_7main.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_8main.xml" value="0.20425724637681159" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_access.xml" value="0.264" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_announcement.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_login.xml" value="0.18432971014492755" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_gm.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_mc.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_sm.xml" value="0.20425724637681159" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_prompt.xml" value="0.20425724637681159" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_gm.xml" value="0.21829710144927536" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_mc.xml" value="0.264" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_sm.xml" value="0.176" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_gm_announce.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main10.xml" value="0.20425724637681159" />
@@ -61,13 +54,10 @@
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main6.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main9.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_mc_announce.xml" value="0.20425724637681159" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_profile_screen.xml" value="0.2" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_qr_code_generator.xml" value="0.1712962962962963" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_qr_code_generator2.xml" value="0.176" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_sign_up.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_sign_up_for_admin.xml" value="0.22644927536231885" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_sm_announce.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_update_profile.xml" value="0.22644927536231885" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/fragment_dashboard.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/fragment_notifications.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/JAYANT/AndroidStudioProjects/trial3/app/src/main/res/layout/qr_scanner.xml" value="0.22826086956521738" />
@@ -89,6 +79,7 @@
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_mc_announce.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_7main.xml" value="0.223731884057971" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_8main.xml" value="0.223731884057971" />
+        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_access.xml" value="0.264" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_announcement.xml" value="0.223731884057971" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_login.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_prompt.xml" value="0.223731884057971" />
