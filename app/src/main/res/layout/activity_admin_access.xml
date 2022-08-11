@@ -42,9 +42,10 @@
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@id/generate_button"
         app:layout_constraintEnd_toEndOf="@id/generate_button"
-        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/generate_button"
+        app:layout_constraintVertical_bias="0.562"
         app:srcCompat="@drawable/ic_baseline_mail_outline_24" />
 
     <TextView
@@ -71,6 +72,7 @@
         android:elevation="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/nav_bar_back"
+        app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toEndOf="@+id/generate_button"
         app:layout_constraintTop_toTopOf="@+id/nav_bar_back"
         app:srcCompat="@drawable/ic_baseline_find_replace_24" />
