@@ -132,7 +132,8 @@
         android:layout_width="175dp"
         android:layout_height="22dp"
         android:elevation="6dp"
-        android:text="TextView"
+        android:textColor="@color/black"
+
         app:layout_constraintTop_toTopOf="@id/name_heading"
         app:layout_constraintBottom_toBottomOf="@id/name_heading"
         app:layout_constraintStart_toStartOf="@id/email_edit_text"/>
@@ -154,7 +155,8 @@
         android:layout_height="23dp"
         android:layout_marginEnd="28dp"
         android:elevation="6dp"
-        android:text="TextView"
+        android:textColor="@color/black"
+
         app:layout_constraintTop_toTopOf="@id/age_heading"
         app:layout_constraintBottom_toBottomOf="@id/age_heading"
         app:layout_constraintStart_toStartOf="@id/name_text"/>
@@ -176,7 +178,8 @@
         android:layout_width="172dp"
         android:layout_height="22dp"
         android:elevation="6dp"
-        android:text="TextView"
+        android:textColor="@color/black"
+
         app:layout_constraintTop_toTopOf="@id/department_heading"
         app:layout_constraintBottom_toBottomOf="@id/department_heading"
         app:layout_constraintStart_toStartOf="@id/age_text" />
@@ -199,10 +202,11 @@
         android:layout_width="172dp"
         android:layout_height="22dp"
         android:elevation="6dp"
-        android:text="TextView"
-        app:layout_constraintTop_toTopOf="@id/mobile_no_heading"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/mobile_no_heading"
-        app:layout_constraintStart_toStartOf="@id/department_text" />
+        app:layout_constraintStart_toStartOf="@id/department_text"
+        app:layout_constraintTop_toTopOf="@id/mobile_no_heading"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/fetch_button"
