@@ -136,10 +136,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/details_text"
         app:layout_constraintEnd_toStartOf="@+id/date_text"
-        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/white_back"
-        app:layout_constraintVertical_bias="0.775"
+        app:layout_constraintVertical_bias="0.758"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -147,8 +147,8 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="288dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="268dp"
         android:hint="      "
         android:textColor="@color/black"
         android:textSize="15dp"
@@ -173,21 +173,21 @@
         android:id="@+id/price_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
+        android:layout_marginStart="112dp"
         android:layout_marginBottom="60dp"
         android:text="@string/price_r"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/nav_bar_back"/>
+        app:layout_constraintBottom_toTopOf="@id/nav_bar_back"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/price_text_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:hint="   "
         android:textSize="20dp"
         android:textStyle="bold"

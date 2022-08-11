@@ -99,7 +99,7 @@ class MainActivity4 : AppCompatActivity() {
         //handle click scan button
         val scanButton: Button = findViewById(R.id.scan_button)
         val available: TextView = findViewById(R.id.available_text)
-        if (hours in 8..10 || hours in 12..14 || hours in 17..22) {
+        if (hours in 8..10 || hours in 12..16 || hours in 17..22) {
                 if (hours in 8..10) {
                     available.text = "Breakfast Available"
                 } else if (hours in 12..14) {
