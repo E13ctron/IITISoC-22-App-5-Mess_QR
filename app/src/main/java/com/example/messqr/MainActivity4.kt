@@ -30,11 +30,13 @@ class MainActivity4 : AppCompatActivity() {
             );
         }
 
+
+
         val currentTime: Date = Calendar.getInstance().time
         val hours: Int = currentTime.hours
         val scanResult: TextView = findViewById(R.id.scan_result)
         val tick: ImageView = findViewById(R.id.tick_icon)
-        if (scanid != "") {
+        if (scanid != "0") {
             tick.setImageResource(R.drawable.ic_green_circle_200)
             scanResult.text = "The QR Code was Scanned Successfully : "
             scanResult.textSize = resources.getDimension(R.dimen.font_10)
@@ -99,7 +101,7 @@ class MainActivity4 : AppCompatActivity() {
         //handle click scan button
         val scanButton: Button = findViewById(R.id.scan_button)
         val available: TextView = findViewById(R.id.available_text)
-        if (hours in 8..10 || hours in 12..14 || hours in 17..22) {
+        if (hours in 8..10 || hours in 12..14 || hours in 16..22) {
                 if (hours in 8..10) {
                     available.text = "Breakfast Available"
                 } else if (hours in 12..14) {
@@ -109,10 +111,10 @@ class MainActivity4 : AppCompatActivity() {
                     available.text = "Dinner Available"
                 }
                 scanButton.setOnClickListener {
-                    if(scanid=="") {
+                    if(scanid=="0") {
                         Intent(this, QR_Scanner::class.java).also {
-                    startActivity(it)
-                    }
+                            startActivity(it)
+                        }
                     }
                     else{
                         Toast.makeText(this, "You have already Scanned", Toast.LENGTH_SHORT)
@@ -124,28 +126,17 @@ class MainActivity4 : AppCompatActivity() {
                 tick.setImageResource(R.drawable.ic_qrcode_default_200)
                 scanResult.text = "Scan the QR"
                 a=0
+                scanid="0"
                 Toast.makeText(this, "Please scan at the correct meal timing", Toast.LENGTH_SHORT)
                     .show()
             }
         }
     }
-
+    override fun onBackPressed() {
+        Toast.makeText(applicationContext, "Disabled Back Press for this Screen", Toast.LENGTH_SHORT).show()
+    }
 }
 
 
 
-
-//this is only for reference that how it will work
-//        val button6:Button=findViewById(R.id.button6)
-//        button6.setOnClickListener {
-//            val intent2=Intent(this, MainActivity10::class.java)
-//            startActivity(intent2)
-//        }
-
-        //rupee navigate button
-//        val rupeeBtn:ImageButton=findViewById(R.id.imageButton9)
-//        rupeeBtn.setOnClickListener {
-//            val intent3=Intent(this, MainActivity5::class.java)
-//            startActivity(intent3)
-//        }
 

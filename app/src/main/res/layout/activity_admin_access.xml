@@ -38,26 +38,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/Cyan"
+        android:padding="8dp"
         android:elevation="50dp"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@id/generate_button"
         app:layout_constraintEnd_toEndOf="@id/generate_button"
-        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/generate_button"
-        app:layout_constraintVertical_bias="0.562"
         app:srcCompat="@drawable/ic_baseline_mail_outline_24" />
 
     <TextView
-        android:id="@+id/qr_generator_text"
+        android:id="@+id/student_details_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="30dp"
         android:background="@color/dullCyan"
         android:fontFamily="sans-serif"
-       android:text="STUDENT'S DETAILS"
+       android:text="@string/student_s_details"
         android:textColor="@color/Cyan"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,194 +64,167 @@
         tools:ignore="TextContrastCheck" />
 
     <ImageButton
-        android:id="@+id/imageView"
+        android:id="@+id/mail_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_back"
         android:elevation="50dp"
+        android:padding="8dp"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/nav_bar_back"
-        app:layout_constraintHorizontal_bias="0.275"
-        app:layout_constraintStart_toEndOf="@+id/generate_button"
+        app:layout_constraintStart_toStartOf="@+id/generate_button"
         app:layout_constraintTop_toTopOf="@+id/nav_bar_back"
         app:srcCompat="@drawable/ic_baseline_find_replace_24" />
 
     <TextView
         android:id="@+id/white_back"
-        android:layout_width="382dp"
-        android:layout_height="598dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/white_textview"
         android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_generator_text"
-        app:layout_constraintVertical_bias="1.0" />
-
+        app:layout_constraintTop_toBottomOf="@id/student_details_text"/>
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/email_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
         android:elevation="50dp"
-        android:text="Email of student"
+        android:text="@string/email_of_student"
         android:textColor="@color/black"
-        android:textSize="18dp"
-
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/white_back"
+        app:layout_constraintTop_toTopOf="@id/white_back"
         tools:layout_editor_absoluteY="161dp" />
 
     <EditText
-        android:id="@+id/textView4"
+        android:id="@+id/email_edit_text"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-
         android:elevation="3dp"
-        android:hint="Enter e-mail"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:hint="@string/enter_e_mail"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/email_heading"
         app:layout_constraintEnd_toEndOf="@+id/white_back"
-        app:layout_constraintHorizontal_bias="0.23"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/white_back"
-        app:layout_constraintVertical_bias="0.189" />
-
+        app:layout_constraintTop_toTopOf="@+id/email_heading"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress" />
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/name_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="30dp"
         android:elevation="50dp"
-        android:text="Name"
+        android:text="@string/name"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.328"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@id/email_heading"
+        app:layout_constraintTop_toBottomOf="@+id/email_heading" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/name_text"
         android:layout_width="175dp"
         android:layout_height="22dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="32dp"
         android:elevation="6dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
+        app:layout_constraintTop_toTopOf="@id/name_heading"
+        app:layout_constraintBottom_toBottomOf="@id/name_heading"
+        app:layout_constraintStart_toStartOf="@id/email_edit_text"/>
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/age_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:elevation="50dp"
-        android:text="Age"
+        android:text="@string/age"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.297"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.393" />
-
+        app:layout_constraintStart_toStartOf="@id/name_heading"
+        app:layout_constraintTop_toBottomOf="@+id/name_heading"/>
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/age_text"
         android:layout_width="179dp"
         android:layout_height="23dp"
         android:layout_marginEnd="28dp"
         android:elevation="6dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.536" />
-
+        app:layout_constraintTop_toTopOf="@id/age_heading"
+        app:layout_constraintBottom_toBottomOf="@id/age_heading"
+        app:layout_constraintStart_toStartOf="@id/name_text"/>
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/department_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="10dp"
         android:elevation="50dp"
-        android:text="Department"
+        android:text="@string/department"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView11"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="@id/age_heading"
+        app:layout_constraintTop_toBottomOf="@+id/age_heading"/>
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/department_text"
         android:layout_width="172dp"
         android:layout_height="22dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="32dp"
         android:elevation="6dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toTopOf="@id/department_heading"
+        app:layout_constraintBottom_toBottomOf="@id/department_heading"
+        app:layout_constraintStart_toStartOf="@id/age_text" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/mobile_no_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="10dp"
         android:elevation="50dp"
-        android:text="Mobile Number"
+        android:text="@string/mobile_number"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView25"
-        app:layout_constraintHorizontal_bias="0.746"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintStart_toStartOf="@id/department_heading"
+        app:layout_constraintTop_toBottomOf="@+id/department_heading"/>
 
     <TextView
-        android:id="@+id/textView25"
-        android:layout_width="176dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="28dp"
+        android:id="@+id/mobile_no_text"
+        android:layout_width="172dp"
+        android:layout_height="22dp"
         android:elevation="6dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toTopOf="@id/mobile_no_heading"
+        app:layout_constraintBottom_toBottomOf="@id/mobile_no_heading"
+        app:layout_constraintStart_toStartOf="@id/department_text" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/fetch_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="95dp"
-        android:layout_marginBottom="34dp"
         android:elevation="20dp"
-        android:text="FETCH"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/nav_bar_back"
+        android:text="@string/fetch"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/logoutbtn"
+        app:layout_constraintTop_toBottomOf="@id/mobile_no_heading"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintStart_toStartOf="parent"/>
     <Button
         android:id="@+id/logoutbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOG OUT"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/nav_bar_back"
+        android:layout_marginBottom="30dp"
+        android:text="@string/log_out"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintBottom_toTopOf="@id/nav_bar_back"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

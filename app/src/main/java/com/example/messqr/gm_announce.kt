@@ -1,10 +1,12 @@
 package com.example.messqr
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.EditText
+import android.widget.ImageButton
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -24,6 +26,32 @@ class gm_announce : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gm_announce)
+
+        //handle  mail buttom
+        val mail_btn: ImageButton =findViewById(R.id.mail_btn)
+        mail_btn.setOnClickListener {
+            Intent(this, admin_access::class.java).also{
+                startActivity(it)
+            }
+
+        }
+
+        //handle qr code generator btn
+        val codeGeneratorbBtn: ImageButton =findViewById(R.id.qr_generate_Ibutton)
+        codeGeneratorbBtn.setOnClickListener {
+            Intent(this, QR_code_generator2::class.java).also{
+                startActivity(it)
+            }
+
+        }
+
+        //handle announce generator btn
+        val announceButton: ImageButton =findViewById(R.id.announce_Ibutton)
+        announceButton.setOnClickListener {
+            Intent(this, Admin_Announcement::class.java).also{
+                startActivity(it)
+            }
+        }
     }
     fun saveData(view: View){
         val headingView: EditText =findViewById(R.id.heading_edit_text)
