@@ -78,4 +78,11 @@
     <string name="department_">Department:</string>
     <string name="mobile_number_">Mobile number:</string>
     <string name="edit">EDIT</string>
+    <string name="student_s_details">STUDENT\'S DETAILS</string>
+    <string name="email_of_student">Email of student</string>
+    <string name="enter_e_mail">Enter e-mail</string>
+    <string name="age">Age</string>
+    <string name="department">Department</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="fetch">FETCH</string>
 </resources>

@@ -14,8 +14,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
 
-
-public var scanid: String=""
+public var scanid: String="0"
 public var a:Int=0
 
 class MainActivity : AppCompatActivity() {

@@ -54,9 +54,9 @@ class admin_access : AppCompatActivity() {
             checkUser()
         }
 
-        val fetch_btn:Button=findViewById(R.id.button4)
+        val fetch_btn:Button=findViewById(R.id.fetch_button)
         fetch_btn.setOnClickListener {
-            val email:EditText=findViewById(R.id.textView4)
+            val email:EditText=findViewById(R.id.email_edit_text)
             val email_data:String=email.text.toString()
             val mdocref:DocumentReference=FirebaseFirestore.getInstance().document("profile/${email_data}")
             fetchData(mdocref)
@@ -71,9 +71,9 @@ class admin_access : AppCompatActivity() {
 
         }
 
-        val mailButton: ImageButton =findViewById(R.id.announce_Ibutton)
-
-        mailButton.setOnClickListener {
+        //handle announce generator btn
+        val announceButton: ImageButton =findViewById(R.id.announce_Ibutton)
+        announceButton.setOnClickListener {
             Intent(this, Admin_Announcement::class.java).also{
                 startActivity(it)
             }
@@ -84,10 +84,10 @@ class admin_access : AppCompatActivity() {
     }
 
     private fun fetchData(mdocref: DocumentReference) {
-        val usernameView: TextView =findViewById(R.id.textView7)
-        val ageView: TextView =findViewById(R.id.textView9)
-        val departmentView: TextView =findViewById(R.id.textView11)
-        val mobileView: TextView =findViewById(R.id.textView25)
+        val usernameView: TextView =findViewById(R.id.name_text)
+        val ageView: TextView =findViewById(R.id.age_text)
+        val departmentView: TextView =findViewById(R.id.department_text)
+        val mobileView: TextView =findViewById(R.id.mobile_no_text)
 
         mdocref.get().addOnSuccessListener {
             if(it.exists()){
