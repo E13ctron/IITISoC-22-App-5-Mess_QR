@@ -30,18 +30,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!--    <ImageView-->
-    <!--        android:id="@+id/imageView5"-->
-    <!--        android:layout_width="252dp"-->
-    <!--        android:layout_height="384dp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.496"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView23"-->
-    <!--        app:layout_constraintVertical_bias="0.057"-->
-    <!--        app:srcCompat="@drawable/whatsapp_image_2022_07_19_at_3_38_04_pm" />-->
-
     <TextView
         android:id="@+id/white_back"
         android:layout_width="400dp"
@@ -49,9 +37,8 @@
         android:layout_marginTop="12dp"
         android:background="@drawable/white_textview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_text" />
+        app:layout_constraintTop_toBottomOf="@id/profile_text" />
 
     <ImageButton
         android:id="@+id/announce_Ibutton"
@@ -154,8 +141,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@id/email_heading"
         app:layout_constraintStart_toEndOf="@id/email_heading"
-        app:layout_constraintTop_toTopOf="@id/email_heading"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@id/email_heading" />
 
     <Button
         android:id="@+id/log_out_button"
@@ -165,7 +151,6 @@
         android:text="@string/log_out"
         app:layout_constraintBottom_toTopOf="@id/nav_bar_back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -178,9 +163,8 @@
         android:textSize="21sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/logged_in_text" />
+        app:layout_constraintTop_toTopOf="@id/logged_in_text" />
 
     <TextView
         android:id="@+id/email_heading"
@@ -193,7 +177,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/username" />
+        app:layout_constraintTop_toTopOf="@id/username" />
 
     <TextView
         android:id="@+id/age_heading"
@@ -205,7 +189,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/email_heading"
-        app:layout_constraintTop_toBottomOf="@+id/email_heading" />
+        app:layout_constraintTop_toBottomOf="@id/email_heading" />
 
     <TextView
         android:id="@+id/department_heading"
@@ -217,7 +201,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/age_heading"
-        app:layout_constraintTop_toBottomOf="@+id/age_heading" />
+        app:layout_constraintTop_toBottomOf="@id/age_heading" />
 
     <TextView
         android:id="@+id/department_text"
@@ -228,7 +212,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@id/age_text"
-        app:layout_constraintTop_toTopOf="@+id/department_heading"
+        app:layout_constraintTop_toTopOf="@id/department_heading"
         app:layout_constraintBottom_toBottomOf="@id/department_heading"/>
 
     <TextView
@@ -241,8 +225,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/age_heading"
         app:layout_constraintStart_toStartOf="@id/email_text"
-        app:layout_constraintTop_toTopOf="@id/age_heading"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@id/age_heading" />
 
     <TextView
         android:id="@+id/mobile_no_heading"
@@ -254,7 +237,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/department_heading"
-        app:layout_constraintTop_toBottomOf="@+id/department_heading" />
+        app:layout_constraintTop_toBottomOf="@id/department_heading" />
 
 
     <TextView
@@ -265,23 +248,17 @@
         android:text="                       "
         android:textColor="@color/black"
         android:textSize="20sp"
-
-        app:layout_constraintBottom_toTopOf="@+id/log_out_button"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintBottom_toBottomOf="@id/mobile_no_heading"
         app:layout_constraintStart_toEndOf="@id/mobile_no_heading"
-        app:layout_constraintTop_toBottomOf="@id/department_text"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintTop_toTopOf="@id/mobile_no_heading" />
 
     <Button
         android:id="@+id/edit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/edit"
-        app:layout_constraintBottom_toTopOf="@+id/log_out_button"
+        app:layout_constraintBottom_toTopOf="@id/log_out_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mobile_no_text"/>
+        app:layout_constraintTop_toBottomOf="@id/mobile_no_text"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
