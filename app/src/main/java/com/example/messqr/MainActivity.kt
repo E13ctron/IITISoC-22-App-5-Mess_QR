@@ -8,6 +8,7 @@ import android.view.Window
 import android.view.WindowManager
 
 public var scanid: String=""
+public var scanid2: String=""
 public var a:Int=0
 
 class MainActivity : AppCompatActivity() {

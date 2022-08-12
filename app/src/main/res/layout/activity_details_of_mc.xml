@@ -153,6 +153,8 @@
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@id/white_back" />
 
     <TextView

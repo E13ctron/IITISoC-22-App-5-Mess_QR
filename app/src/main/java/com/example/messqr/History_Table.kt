@@ -139,7 +139,7 @@ class History_Table : AppCompatActivity() {
 
         // updating and fetching data
 
-        updateData(mdocref)
+//        updateData(mdocref)
         fetchData(mdocref)
 
 

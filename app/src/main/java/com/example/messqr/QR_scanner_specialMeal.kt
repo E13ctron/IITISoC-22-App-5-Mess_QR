@@ -30,7 +30,7 @@ class QR_scanner_specialMeal: AppCompatActivity() {
         codeScanner.decodeCallback = DecodeCallback {
             runOnUiThread {
                 //Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()
-                scanid=it.text.toString()
+                scanid2=it.text.toString()
                 Intent(this,SpecialMeal_QR_Scanning::class.java).also {
                     startActivity(it)
                 }

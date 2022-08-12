@@ -88,17 +88,6 @@
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(1)/app/src/main/res/layout/qr_scanner.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(commit)/app/src/main/res/layout/activity_admin_login.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(orientation)/app/src/main/res/layout/activity_main4.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_7main.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_8main.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_main10.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_main2.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_main3.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_main4.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_main5.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_main6.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_main9.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3(somewhat final)/app/src/main/res/layout/activity_profile_screen.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3/app/src/main/res/drawable/border.xml" value="0.2425" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3/app/src/main/res/drawable/border1.xml" value="0.2425" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/trial3/app/src/main/res/drawable/border2.xml" value="0.2425" />
@@ -112,12 +101,14 @@
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/drawable/border3.xml" value="0.1475" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_7main.xml" value="0.223731884057971" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_8main.xml" value="0.223731884057971" />
-        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_announcement.xml" value="0.223731884057971" />
+        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_announcement.xml" value="0.2" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_login.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_prompt.xml" value="0.223731884057971" />
+        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_announcement_section.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_gm.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_mc.xml" value="0.2" />
+        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_mc.xml" value="0.264" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_sm.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_loginscreen.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main.xml" value="0.1852355072463768" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main10.xml" value="0.18432971014492755" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main2.xml" value="0.1852355072463768" />
@@ -126,6 +117,7 @@
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main5.xml" value="0.223731884057971" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main6.xml" value="0.223731884057971" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main9.xml" value="0.1852355072463768" />
+        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main_qr_scanning.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_profile_screen.xml" value="0.2" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_prompt_page.xml" value="0.2" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_qr_code_generator2.xml" value="0.223731884057971" />

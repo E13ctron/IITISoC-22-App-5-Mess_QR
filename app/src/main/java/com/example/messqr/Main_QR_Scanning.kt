@@ -47,30 +47,33 @@ class Main_QR_Scanning : AppCompatActivity() {
         val scanResult: TextView = findViewById(R.id.scan_result)
         val tick: ImageView = findViewById(R.id.tick_icon)
         if (scanid != "") {
-            var string :String=""
+            var value :String=""
             mdocref.get().addOnSuccessListener {
 
-                    string= it.getString(scanid).toString()
+                    value= it.getString(scanid).toString()
 
             }
                 .addOnFailureListener {e->
                     Log.e(TAG, e.toString())
                 }
 
-            if (string == "0")
-            {
+            Log.v(String(), value)
+
+//            if (value == "0")
+//            {
                 tick.setImageResource(R.drawable.ic_green_circle_200)
-                scanResult.text = "The QR Code was Scanned Successfully : "
+                scanResult.text = "The QR Code was Scanned Successfully "
                 scanResult.textSize = resources.getDimension(R.dimen.font_10)
                 a=1
-            }
-            else if(string=="1")
-            {
-                tick.setImageResource(R.drawable.ic_qrcode_default_200)
-                scanResult.text = "Already Scanned "
-                Toast.makeText(this, "Do not scan more than one time", Toast.LENGTH_SHORT)
-                    .show()
-            }
+                updateData(mdocref)
+//            }
+//            else if(value=="1")
+//            {
+//                tick.setImageResource(R.drawable.ic_qrcode_default_200)
+//                scanResult.text = "Already Scanned "
+//                Toast.makeText(this, "Do not scan more than one time", Toast.LENGTH_SHORT)
+//                    .show()
+//            }
 
         } else {
             tick.setImageResource(R.drawable.ic_qrcode_default_200)
@@ -175,6 +178,23 @@ class Main_QR_Scanning : AppCompatActivity() {
             }
         }
 
+    }
+    private fun updateData(mdocref: DocumentReference) {
+        if (scanid==""){return}
+
+//       val enterTextData:EditText=findViewById(R.id.enterDataText)
+        val string:String= scanid
+        val dataText:String="1"
+
+        val dataToSave= hashMapOf<String, String>()
+        dataToSave[string]=dataText
+
+        mdocref.update(dataToSave as Map<String, Any>).addOnSuccessListener {
+            Log.d(History_Table.TAG, "updateData: data is updated")
+        }
+            .addOnFailureListener{e->
+                Log.e(History_Table.TAG, e.toString() )
+            }
     }
     override fun onBackPressed() {
         Toast.makeText(applicationContext, "Disabled Back Press for this Screen", Toast.LENGTH_SHORT).show()

@@ -24,18 +24,21 @@
         app:layout_constraintBottom_toTopOf="@id/active_plan_text"
         tools:ignore="TextContrastCheck" />
 
+
     <TextView
         android:id="@+id/available_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/black"
         android:textStyle="bold"
-        android:textColor="@color/red"
-        tools:text="@string/timer"
-        android:layout_marginEnd="60dp"
         app:layout_constraintBottom_toBottomOf="@id/special_meal_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/special_meal_button" />
-
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toEndOf="@+id/special_meal_button"
+        app:layout_constraintTop_toTopOf="@id/special_meal_button"
+        app:layout_constraintVertical_bias="0.619"
+        tools:text="@string/timer" />
 
     <TextView
         android:id="@+id/active_plan_text"
