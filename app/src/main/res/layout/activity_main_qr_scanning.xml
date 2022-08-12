@@ -4,98 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity4">
+    android:background="@color/dullCyan"
+    tools:context=".Main_QR_Scanning">
 
-    <TextView
-        android:id="@+id/back_color"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/dullCyan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/timer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dinner_available"
-        android:padding="20dp"
+    <Button
+        android:id="@+id/special_meal_button"
+        android:background="@drawable/shadow"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:backgroundTint="@color/Cyan"
+        android:text="@string/special_meal"
+        android:textColor="#ffffff"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/special_menu_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/dullCyan"
-        android:fontFamily="sans-serif"
-        android:text="@string/special_meal_caps"
-        android:textColor="@color/Cyan"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/timer"
+        app:layout_constraintBottom_toTopOf="@id/active_plan_text"
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/nav_drawer_back"
+        android:id="@+id/available_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        tools:text="@string/timer"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/special_meal_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/special_meal_button" />
+
+
+    <TextView
+        android:id="@+id/active_plan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@color/dullCyan"
+        android:fontFamily="sans-serif"
+        android:text="@string/active_plan"
+        android:textColor="@color/darkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/monthly_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/monthly_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/dullCyan"
+        android:fontFamily="sans-serif"
+        android:text="@string/monthly"
+        android:textColor="@color/Cyan"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/white_back"
+        app:layout_constraintEnd_toEndOf="@id/active_plan_text"
+        app:layout_constraintStart_toStartOf="@id/active_plan_text"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/white_back"
+        android:layout_width="323dp"
+        android:layout_height="414dp"
+        android:background="@drawable/white_textview"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toTopOf="@id/nav_bar_back"
+        app:layout_constraintEnd_toEndOf="@id/monthly_text"
+        app:layout_constraintStart_toStartOf="@id/monthly_text"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/scan_button"
+        android:elevation="200dp"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shadow"
+        android:backgroundTint="@color/Cyan"
+        android:text="@string/scan"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/white_back"
+        app:layout_constraintStart_toStartOf="@id/white_back"
+        app:layout_constraintEnd_toEndOf="@id/white_back" />
+
+    <TextView
+        android:id="@+id/nav_bar_back"
         android:layout_width="0dp"
         android:layout_height="71dp"
         android:background="@drawable/nav_design"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-    <TextView
-        android:id="@+id/white_back"
-        android:elevation="2dp"
-        android:layout_width="323dp"
-        android:layout_height="400dp"
-        android:background="@drawable/white_textview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/special_menu_text"
-        app:layout_constraintBottom_toTopOf="@id/nav_drawer_back"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/scan_button"
-        android:background="@drawable/shadow"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:textSize="16sp"
-        android:backgroundTint="@color/Cyan"
-        android:text="@string/scan"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/white_back"
-        app:layout_constraintEnd_toEndOf="@id/white_back"
-        app:layout_constraintStart_toStartOf="@id/white_back"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
     <ImageButton
         android:id="@+id/announce_Ibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:background="@color/Cyan"
+        android:layout_marginStart="8dp"
         android:importantForAccessibility="no"
-        android:minWidth="48dp"
         android:src="@drawable/ic_baseline_notifications_none_24"
-        app:layout_constraintEnd_toStartOf="@id/payment_Ibutton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/nav_drawer_back"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="@id/nav_bar_back"
+        app:layout_constraintEnd_toStartOf="@id/payment_Ibutton"/>
 
     <ImageButton
         android:id="@+id/payment_Ibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="48dp"
         android:background="@color/Cyan"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@id/announce_Ibutton"
@@ -108,7 +133,6 @@
         android:id="@+id/scan_Ibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="48dp"
         android:background="@drawable/round_back"
         android:padding="8dp"
         android:importantForAccessibility="no"
@@ -124,7 +148,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/Cyan"
-        android:minWidth="48dp"
         android:importantForAccessibility="no"
         app:srcCompat="@drawable/ic_history_24"
         app:layout_constraintBottom_toBottomOf="@id/payment_Ibutton"
@@ -138,7 +161,6 @@
         android:layout_height="wrap_content"
         android:background="@color/Cyan"
         android:layout_marginEnd="8dp"
-        android:minWidth="48dp"
         android:importantForAccessibility="no"
         android:src="@drawable/ic_baseline_account_circle_24"
         app:layout_constraintBottom_toBottomOf="@id/history_Ibutton"
@@ -148,16 +170,15 @@
 
     <ImageView
         android:id="@+id/tick_icon"
+        android:elevation="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:elevation="15dp"
-        android:importantForAccessibility="no"
         android:src="@drawable/ic_qrcode_default_200"
+        app:layout_constraintEnd_toEndOf="@id/white_back"
+        app:layout_constraintStart_toStartOf="@id/white_back"
         app:layout_constraintTop_toTopOf="@id/white_back"
-        app:layout_constraintEnd_toEndOf="@+id/white_back"
-        app:layout_constraintStart_toStartOf="@+id/white_back"
-        app:layout_constraintTop_toBottomOf="@+id/special_menu_text" />
+        android:importantForAccessibility="no" />
 
     <TextView
         android:id="@+id/scan_result"
@@ -182,6 +203,25 @@
 <!--        app:layout_constraintBottom_toTopOf="@id/scan_button"-->
 <!--        app:layout_constraintEnd_toEndOf="@id/scan_result"-->
 <!--        app:layout_constraintStart_toStartOf="@id/scan_result"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/scan_result"/>-->
+<!--        app:layout_constraintTop_toBottomOf="@id/scan_result" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/timeTV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/place_holder_time"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"/>-->
+
+
+
+    <!--    <com.budiyev.android.codescanner.CodeScannerView-->
+<!--        android:id="@+id/scanner_view"-->
+<!--        android:layout_width="323dp"-->
+<!--        android:layout_height="400dp"-->
+<!--        app:layout_constraintStart_toStartOf="@id/textView12"-->
+<!--        app:layout_constraintTop_toTopOf="@id/textView12"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

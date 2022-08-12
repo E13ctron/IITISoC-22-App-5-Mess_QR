@@ -8,12 +8,12 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import com.example.messqr.databinding.ActivityMain3Binding
+import com.example.messqr.databinding.ActivityLoginscreenBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity3 : AppCompatActivity() {
+class LoginScreen : AppCompatActivity() {
     //viewBinding
-    private lateinit var binding:ActivityMain3Binding
+    private lateinit var binding:ActivityLoginscreenBinding
     //action bar
     private lateinit var actionBar: ActionBar
     //progress bar
@@ -26,7 +26,7 @@ class MainActivity3 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityMain3Binding.inflate(layoutInflater)
+        binding= ActivityLoginscreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //configure action bar
@@ -86,7 +86,7 @@ class MainActivity3 : AppCompatActivity() {
                 Toast.makeText(this, "Logged in as ${email}", Toast.LENGTH_SHORT).show()
 
                 //open profile activity
-                startActivity(Intent(this, MainActivity4::class.java))
+                startActivity(Intent(this, Main_QR_Scanning::class.java))
                 finish()
             }
             .addOnFailureListener{e->
@@ -103,7 +103,7 @@ class MainActivity3 : AppCompatActivity() {
         val firebaseUser=firebaseAuth.currentUser
         if (firebaseUser!=null) {
             //user is already logged in
-            startActivity(Intent(this, MainActivity4::class.java))
+            startActivity(Intent(this, Main_QR_Scanning::class.java))
             finish()
         }
     }

@@ -10,7 +10,6 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.ActionBar
 import com.example.messqr.databinding.ActivityAdminAccessBinding
-import com.example.messqr.databinding.ActivityProfileScreenBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
@@ -118,7 +117,7 @@ class admin_access : AppCompatActivity() {
         else
         {
             //user is null user not logged in go to login window
-            startActivity(Intent(this, MainActivity2::class.java))
+            startActivity(Intent(this, WelcomeScreen::class.java))
             finish()
         }
     }

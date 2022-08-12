@@ -11,7 +11,7 @@ import com.razorpay.PaymentResultListener
 import org.json.JSONException
 import org.json.JSONObject
 
-class MainActivity5 : AppCompatActivity(), PaymentResultListener {
+class Payment_Section : AppCompatActivity(), PaymentResultListener {
 
     lateinit var fullMonthPay: ImageButton
     lateinit var dailyPay: ImageButton
@@ -19,7 +19,7 @@ class MainActivity5 : AppCompatActivity(), PaymentResultListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main5)
+        setContentView(R.layout.activity_payment_section)
 
         //restrict the screenshot on this specific page
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
@@ -32,7 +32,7 @@ class MainActivity5 : AppCompatActivity(), PaymentResultListener {
         //handle click announcement Image button
         val announceImageButtonButton: ImageButton = findViewById(R.id.announce_Ibutton)
         announceImageButtonButton.setOnClickListener {
-            Intent(this, MainActivity9::class.java).also {
+            Intent(this, Announcement_Section::class.java).also {
                 startActivity(it)
             }
         }
@@ -40,7 +40,7 @@ class MainActivity5 : AppCompatActivity(), PaymentResultListener {
         //handle click scanner Image button
         val scanImageButton: ImageButton = findViewById(R.id.scan_Ibutton)
         scanImageButton.setOnClickListener {
-            Intent(this, MainActivity4::class.java).also {
+            Intent(this, Main_QR_Scanning::class.java).also {
                 startActivity(it)
             }
         }
@@ -48,7 +48,7 @@ class MainActivity5 : AppCompatActivity(), PaymentResultListener {
         //handle click history Image button
         val historyImageButton: ImageButton = findViewById(R.id.history_Ibutton)
         historyImageButton.setOnClickListener {
-            Intent(this, MainActivity10::class.java).also {
+            Intent(this, History_Table::class.java).also {
                 startActivity(it)
             }
         }
@@ -105,7 +105,7 @@ class MainActivity5 : AppCompatActivity(), PaymentResultListener {
                 obj.put("prefill.email", "ishaanmittal123@gmail.com")
 
                 // open razorpay to checkout activity
-                checkout.open(this@MainActivity5, obj)
+                checkout.open(this@Payment_Section, obj)
             } catch (e: JSONException) {
                 e.printStackTrace()
             }
@@ -151,7 +151,7 @@ class MainActivity5 : AppCompatActivity(), PaymentResultListener {
                 obj.put("prefill.email", "ishaanmittal123@gmail.com")
 
                 // open razorpay to checkout activity
-                checkout.open(this@MainActivity5, obj)
+                checkout.open(this@Payment_Section, obj)
             } catch (e: JSONException) {
                 e.printStackTrace()
             }
@@ -201,7 +201,7 @@ class MainActivity5 : AppCompatActivity(), PaymentResultListener {
                 obj.put("prefill.email", "ishaanmittal123@gmail.com")
 
                 // open razorpay to checkout activity
-                checkout.open(this@MainActivity5, obj)
+                checkout.open(this@Payment_Section, obj)
             } catch (e: JSONException) {
                 e.printStackTrace()
             }

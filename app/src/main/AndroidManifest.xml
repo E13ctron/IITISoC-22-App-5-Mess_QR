@@ -83,7 +83,7 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity8"
+            android:name=".SpecialMeal_QR_Scanning"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -91,11 +91,11 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity10"
+            android:name=".History_Table"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity9"
+            android:name=".Announcement_Section"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -103,19 +103,19 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity5"
+            android:name=".Payment_Section"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity4"
+            android:name=".Main_QR_Scanning"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".LoginScreen"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".WelcomeScreen"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

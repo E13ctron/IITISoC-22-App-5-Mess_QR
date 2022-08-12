@@ -42,7 +42,7 @@ class update_profile : AppCompatActivity() {
         //handle click announcement Image button
         val announceImageButtonButton: ImageButton =  findViewById(R.id.announce_Ibutton)
         announceImageButtonButton.setOnClickListener {
-            Intent(this,MainActivity9::class.java).also{
+            Intent(this,Announcement_Section::class.java).also{
                 startActivity(it)
             }
         }
@@ -50,7 +50,7 @@ class update_profile : AppCompatActivity() {
         //handle click scanner Image button
         val scanImageButton: ImageButton =  findViewById(R.id.scan_Ibutton)
         scanImageButton.setOnClickListener {
-            Intent(this,MainActivity4::class.java).also{
+            Intent(this,Main_QR_Scanning::class.java).also{
                 startActivity(it)
             }
         }
@@ -58,7 +58,7 @@ class update_profile : AppCompatActivity() {
         //handle click history Image button
         val historyImageButton: ImageButton =  findViewById(R.id.history_Ibutton)
         historyImageButton.setOnClickListener {
-            Intent(this,MainActivity10::class.java).also{
+            Intent(this,History_Table::class.java).also{
                 startActivity(it)
             }
         }
@@ -66,7 +66,7 @@ class update_profile : AppCompatActivity() {
         //handle click payment Image button
         val paymentImageButton: ImageButton =  findViewById(R.id.payment_Ibutton)
         paymentImageButton.setOnClickListener {
-            Intent(this,MainActivity5::class.java).also{
+            Intent(this,Payment_Section::class.java).also{
                 startActivity(it)
             }
         }

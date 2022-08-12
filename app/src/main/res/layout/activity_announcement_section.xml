@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dullCyan"
-    tools:context=".MainActivity9">
+    tools:context=".Announcement_Section">
 
     <TextView
         android:id="@+id/white_back"

@@ -2,19 +2,16 @@ package com.example.messqr
 
 import android.content.Intent
 import android.graphics.Color
-import android.graphics.Color.parseColor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 
-class MainActivity10 : AppCompatActivity() {
+class History_Table : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
 
 
@@ -29,7 +26,7 @@ class MainActivity10 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main10)
+        setContentView(R.layout.activty_history_table)
 
 
         val B1_textView:TextView=findViewById(R.id.B1)
@@ -990,7 +987,7 @@ class MainActivity10 : AppCompatActivity() {
         //handle click announcement Image button
         val announceImageButtonButton: ImageButton =  findViewById(R.id.announce_Ibutton)
         announceImageButtonButton.setOnClickListener {
-            Intent(this,MainActivity9::class.java).also{
+            Intent(this,Announcement_Section::class.java).also{
                 startActivity(it)
             }
         }
@@ -998,7 +995,7 @@ class MainActivity10 : AppCompatActivity() {
         //handle click scanner Image button
         val scanImageButton: ImageButton =  findViewById(R.id.scan_Ibutton)
         scanImageButton.setOnClickListener {
-            Intent(this,MainActivity4::class.java).also{
+            Intent(this,Main_QR_Scanning::class.java).also{
                 startActivity(it)
             }
         }
@@ -1006,7 +1003,7 @@ class MainActivity10 : AppCompatActivity() {
         //handle click payment Image button
         val paymentImageButton: ImageButton =  findViewById(R.id.payment_Ibutton)
         paymentImageButton.setOnClickListener {
-            Intent(this,MainActivity5::class.java).also{
+            Intent(this,Payment_Section::class.java).also{
                 startActivity(it)
             }
         }

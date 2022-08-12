@@ -14,18 +14,17 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
-import java.util.jar.Manifest
 
 
-class MainActivity4 : AppCompatActivity() {
+class Main_QR_Scanning : AppCompatActivity() {
     companion object {
-        private const val TAG = "MainActivity4"
+        private const val TAG = "Main_QR_Scanning"
     }
 
     private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main4)
+        setContentView(R.layout.activity_main_qr_scanning)
 
         //init firebase auth
         firebaseAuth=FirebaseAuth.getInstance()
@@ -81,7 +80,7 @@ class MainActivity4 : AppCompatActivity() {
         //handle click special meal button
         val button4: Button = findViewById(R.id.special_meal_button)
         button4.setOnClickListener {
-            Intent(this, MainActivity8::class.java).also {
+            Intent(this, SpecialMeal_QR_Scanning::class.java).also {
                 startActivity(it)
             }
         }
@@ -101,7 +100,7 @@ class MainActivity4 : AppCompatActivity() {
         //handle click announcement Image button
         val announceImageButtonButton: ImageButton = findViewById(R.id.announce_Ibutton)
         announceImageButtonButton.setOnClickListener {
-            Intent(this, MainActivity9::class.java).also {
+            Intent(this, Announcement_Section::class.java).also {
                 startActivity(it)
             }
         }
@@ -109,7 +108,7 @@ class MainActivity4 : AppCompatActivity() {
         //handle click payment Image button
         val paymentImageButton: ImageButton = findViewById(R.id.payment_Ibutton)
         paymentImageButton.setOnClickListener {
-            Intent(this, MainActivity5::class.java).also {
+            Intent(this, Payment_Section::class.java).also {
                 startActivity(it)
             }
         }
@@ -117,7 +116,7 @@ class MainActivity4 : AppCompatActivity() {
         //handle click history Image button
         val historyImageButton: ImageButton = findViewById(R.id.history_Ibutton)
         historyImageButton.setOnClickListener {
-            Intent(this, MainActivity10::class.java).also {
+            Intent(this, History_Table::class.java).also {
                 startActivity(it)
             }
         }

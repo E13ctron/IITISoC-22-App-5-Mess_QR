@@ -2,7 +2,6 @@ package com.example.messqr
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Chronometer
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.budiyev.android.codescanner.*
@@ -32,7 +31,7 @@ class QR_Scanner: AppCompatActivity() {
             runOnUiThread {
                 //Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()
                 scanid=it.text.toString()
-                Intent(this,MainActivity4::class.java).also {
+                Intent(this,Main_QR_Scanning::class.java).also {
                     startActivity(it)
                 }
             }

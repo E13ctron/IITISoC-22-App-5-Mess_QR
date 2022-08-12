@@ -12,13 +12,13 @@ import android.widget.TextView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
-class MainActivity2 : AppCompatActivity() {
+class WelcomeScreen : AppCompatActivity() {
     private val TAG = "PermissionDemo"
     private val RECORD_REQUEST_CODE = 101
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_welcomescreen)
         setupPermissions()
         val signUp: TextView = findViewById(R.id.signUp)
         signUp.setOnClickListener {
@@ -28,7 +28,7 @@ class MainActivity2 : AppCompatActivity() {
 
         val button: Button = findViewById(R.id.studentButton)
         button.setOnClickListener {
-            val intent2 = Intent(this, MainActivity3::class.java)
+            val intent2 = Intent(this, LoginScreen::class.java)
             startActivity(intent2)
         }
         val button2: Button = findViewById(R.id.adminButton)

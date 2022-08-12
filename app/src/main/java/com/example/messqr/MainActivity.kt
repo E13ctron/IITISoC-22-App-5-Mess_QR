@@ -1,18 +1,11 @@
 package com.example.messqr
 
-import android.Manifest
-import android.content.ContentValues
 import android.content.Intent
-import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.util.Log
 import android.view.Window
 import android.view.WindowManager
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.startActivity
 
 public var scanid: String=""
 public var a:Int=0
@@ -37,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         //we use post delay methode to tell how time it has to run
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, WelcomeScreen::class.java)
             startActivity(intent)
             finish()
         }, 3000)

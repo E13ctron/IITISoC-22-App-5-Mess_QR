@@ -151,7 +151,7 @@
         android:padding="2dp"
         android:text="                 "
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@id/email_heading"
         app:layout_constraintStart_toEndOf="@id/email_heading"
         app:layout_constraintTop_toTopOf="@id/email_heading"

@@ -99,7 +99,7 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this, "created account with email as $email", Toast.LENGTH_SHORT).show()
                 initializeData(mdocref)
                 //open login
-                startActivity(Intent(this,MainActivity3::class.java))
+                startActivity(Intent(this,LoginScreen::class.java))
                 finish()
             }
             .addOnFailureListener{e->

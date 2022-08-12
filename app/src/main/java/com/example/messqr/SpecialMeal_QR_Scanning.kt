@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.widget.*
 import java.util.*
 
-class MainActivity8 : AppCompatActivity() {
+class SpecialMeal_QR_Scanning : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_8main)
+        setContentView(R.layout.activity_specialmeal_qr_scanning)
         val currentTime: Date = Calendar.getInstance().time
         var hours: Int = currentTime.hours
         var scanResult: TextView = findViewById(R.id.scan_result)
@@ -27,7 +27,7 @@ class MainActivity8 : AppCompatActivity() {
         //handle click announcement Image button
         val announceImageButtonButton: ImageButton =  findViewById(R.id.announce_Ibutton)
         announceImageButtonButton.setOnClickListener {
-            Intent(this,MainActivity9::class.java).also{
+            Intent(this,Announcement_Section::class.java).also{
                 startActivity(it)
             }
         }
@@ -35,7 +35,7 @@ class MainActivity8 : AppCompatActivity() {
         //handle click payment Image button
         val paymentImageButton: ImageButton =  findViewById(R.id.payment_Ibutton)
         paymentImageButton.setOnClickListener {
-            Intent(this,MainActivity5::class.java).also{
+            Intent(this,Payment_Section::class.java).also{
                 startActivity(it)
             }
         }
@@ -43,7 +43,7 @@ class MainActivity8 : AppCompatActivity() {
         //handle click history Image button
         val historyImageButton: ImageButton =  findViewById(R.id.history_Ibutton)
         historyImageButton.setOnClickListener {
-            Intent(this,MainActivity10::class.java).also{
+            Intent(this,History_Table::class.java).also{
                 startActivity(it)
             }
         }
