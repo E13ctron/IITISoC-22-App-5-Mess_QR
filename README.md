@@ -50,3 +50,11 @@ management of students’ data by authorities.
 ![Screenshot 2022-08-12 235720](https://user-images.githubusercontent.com/100084399/184421499-94daefbd-7e3b-430c-bb3e-d997785d65eb.png)
 
 
+## Team members
+
+- [Jayant Belwanshi](https://github.com/jynt1401)
+- [Ishaan Mittal](https://github.com/ishaanmittal-6176)
+- [Mihir Patel](https://github.com/MihirKp25)
+- [Tanwish Yesankar](https://github.com/Tanwish2003)
+## Team mentor
+- [Amarnath K.](https://github.com/E13ctron)
