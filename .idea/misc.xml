@@ -106,7 +106,7 @@
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_admin_prompt.xml" value="0.223731884057971" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_announcement_section.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_gm.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_mc.xml" value="0.264" />
+        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_mc.xml" value="0.4714548802946593" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_details_of_sm.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_loginscreen.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main.xml" value="0.1852355072463768" />
@@ -118,6 +118,7 @@
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main6.xml" value="0.223731884057971" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main9.xml" value="0.1852355072463768" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_main_qr_scanning.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_mc_announce.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_profile_screen.xml" value="0.2" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_prompt_page.xml" value="0.2" />
         <entry key="..\:/Users/Mihir Patel/AndroidStudioProjects/trial3/app/src/main/res/layout/activity_qr_code_generator2.xml" value="0.223731884057971" />

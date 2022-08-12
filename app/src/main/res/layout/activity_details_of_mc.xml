@@ -146,15 +146,14 @@
         android:id="@+id/date_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="284dp"
+        android:layout_marginStart="10dp"
         android:hint="      "
         android:textColor="@color/black"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:textSize="15sp"
+        android:paddingHorizontal="10dp"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@id/white_back" />
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintBottom_toBottomOf="@id/textView"/>
 
     <TextView
         android:id="@+id/details_text"
@@ -164,7 +163,7 @@
         android:layout_marginTop="76dp"
         android:hint="                          "
         android:padding="40dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -178,7 +177,7 @@
         android:layout_marginBottom="60dp"
         android:text="@string/price_r"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
 
         app:layout_constraintBottom_toTopOf="@id/nav_bar_back"
@@ -190,7 +189,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:hint="   "
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/price_text"
         app:layout_constraintStart_toEndOf="@id/price_text" />
